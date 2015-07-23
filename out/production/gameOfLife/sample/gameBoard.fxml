@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane alignment="CENTER_LEFT" gridLinesVisible="true" layoutY="76.0" prefHeight="267.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Start Freshman" textAlignment="CENTER" wrapText="true" />
+            <Label text="Start Junior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+            <Label text="Start Sophmore" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+            <Label text="Start Senior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3" />
+            <Label text="Personal" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Academic" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Life" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Academic" GridPane.columnIndex="2" />
+            <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="Personal" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label text="Academic" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label text="Personal" GridPane.columnIndex="3" />
+            <Label text="Academic" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label text="Life" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label text="Personal" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label text="Life" GridPane.columnIndex="4" />
+            <Label text="Personal" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Label text="Academic" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Label text="Life" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Label text="Academic" GridPane.columnIndex="5" />
+            <Label text="Life" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Label text="Personal" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Label text="Academic" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Label text="Personal" GridPane.columnIndex="6" />
+            <Label text="Academic" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Label text="Life" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Label text="Personal" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Label text="Summer" GridPane.columnIndex="7" />
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Label text="Life" GridPane.columnIndex="1">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/blue.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Green_square.svg.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/yellow.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <Label layoutX="151.0" layoutY="18.0" text="The Game of Life">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="355.0" mnemonicParsing="false" text="Roll Die" />
+   </children>
+</AnchorPane>

@@ -65,7 +65,7 @@
             </Label>
             <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
-                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%203431/Red.svg.png" />
+                  <Image url="@../../../../../Desktop/Ga%20Tech/Summer%202015/CS%203312%20and%20LMC%2034Red.svg.png" />
                </image>
             </ImageView>
             <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">

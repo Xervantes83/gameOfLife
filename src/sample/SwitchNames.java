@@ -8,9 +8,6 @@ public class SwitchNames {
     public static void main (String[] args) {
         try {
             File fxmlFile = new File("gameboard.fxml");
-            file.
-        } catch ( IOException e) {
-            e.printStackTrace();
-        }
+        } catch ( IOException)
     }
 }

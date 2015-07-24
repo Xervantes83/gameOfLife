@@ -15,10 +15,20 @@ import javafx.scene.control.Label;
 public class ruleScreenController implements Initializable {
 
     /**
-     * @variable newGameButton button to start new game
+     * @variable backButton button to go back to startScreen
      */
     @FXML
-    private Button newGameButton;
+    private Button backButton;
+
+    /**
+     * sets the startSceen scene as the main scene when the button is clicked.
+     *
+     * @param event the event
+     */
+    @FXML
+    private void handleBackButtonAction(final ActionEvent event) {
+        Main.setStartScreenScene();
+    }
 
     /**
      * Initializes.

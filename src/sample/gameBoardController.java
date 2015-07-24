@@ -14,6 +14,8 @@ import javafx.scene.control.Label;
 import javax.swing.JOptionPane;
 import javafx.scene.image.ImageView;
 import java.lang.Integer;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.canvas.Canvas;
 
 
 public class gameBoardController implements Initializable {
@@ -38,6 +40,9 @@ public class gameBoardController implements Initializable {
      */
     @FXML
     private Button dieButton;
+
+    @FXML
+    private Label playerLabel;
 
     /**
      * @variable imageView to show player local
@@ -313,6 +318,7 @@ public class gameBoardController implements Initializable {
             currentP1 = currentP1 + playerMove;
             p1Turn = false;
             p2Turn = true;
+            playerLabel.setText("Player 2 Turn");
             return reds[currentP1];
         }
         if (p2Turn == true) {
@@ -321,6 +327,7 @@ public class gameBoardController implements Initializable {
             currentP2 = currentP2 + playerMove;
             p2Turn = false;
             p3Turn = true;
+            playerLabel.setText("Player 3 Turn");
             return blues[currentP2];
         }
         if (p3Turn == true) {
@@ -329,6 +336,7 @@ public class gameBoardController implements Initializable {
             currentP3 = currentP3 + playerMove;
             p3Turn = false;
             p4Turn = true;
+            playerLabel.setText("Player 4 Turn");
             return greens[currentP3];
         }
         else{
@@ -337,6 +345,7 @@ public class gameBoardController implements Initializable {
             currentP4 = currentP4 + playerMove;
             p4Turn = false;
             p1Turn = true;
+            playerLabel.setText("Player 1 Turn");
             return yellows[currentP4];
         }
     }
@@ -344,18 +353,22 @@ public class gameBoardController implements Initializable {
 
     /**
      * rolls a die to generate random number from 1-6 when the button is clicked.
+     * and moves character icon to match it
      * @param event the event
      */
     @FXML
     private void handleDieButtonAction(final ActionEvent event) {
+        int temp = 0;
         int playerMove;
         playerMove = (int)(Math.random() * 6) + 1;
+        getImageView(playerMove).setVisible(true);
         JOptionPane.showMessageDialog(null,
                 "You have rolled a " + playerMove, "Player Movement",
                 JOptionPane.INFORMATION_MESSAGE);
-        getImageView(playerMove).setVisible(true);
+        Main.setQuestionScreenScene();
 
     }
+
 
     /**
      * Initializes.

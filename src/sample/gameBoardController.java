@@ -24,14 +24,14 @@ public class gameBoardController implements Initializable {
     boolean p2Turn = false;
     boolean p3Turn = false;
     boolean p4Turn = false;
-    int p1X = 0;
-    int p1Y = 0;
-    int p2X = 0;
-    int p2Y = 0;
-    int p3X = 0;
-    int p3Y = 0;
-    int p4X = 0;
-    int p4Y = 0;
+    int currentP1 = 0;
+    int currentP2 = 0;
+    int currentP3 = 0;
+    int currentP4 = 0;
+    int oldP1;
+    int oldP2;
+    int oldP3;
+    int oldP4;
 
     /**
      * @variable dieButton button to roll a Die
@@ -298,43 +298,46 @@ public class gameBoardController implements Initializable {
     private ImageView green73;
     @FXML
     private ImageView yellow73;
-    /**
-     * @return the imageView
-     */
+
+/**
+ * @return the imageView
+ */
     public final ImageView getImageView(int playerMove) {
+        ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red43, red53, red63, red73};
+        ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue43, blue53, blue63, blue73};
+        ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green43, green53, green63, green73};
+        ImageView[] yellows = {yellow00, yellow10, yellow20, yellow30, yellow40, yellow50, yellow60, yellow70, yellow01, yellow11, yellow21, yellow31, yellow41, yellow51, yellow61, yellow71, yellow02, yellow12, yellow22, yellow32, yellow42, yellow52, yellow62, yellow72, yellow03, yellow13, yellow23, yellow43, yellow53, yellow63, yellow73};
         if (p1Turn == true) {
-            p1X = p1X + playerMove;
-            if (p1X >= 8) {
-                p1Y++;
-            }
-            p1X = p1X % numCol;
-            String x = Integer.toString(p1X);
-            String y = Integer.toString(p1Y);
-            return red10;
+            oldP1 = currentP1;
+            reds[oldP1].setVisible(false);
+            currentP1 = currentP1 + playerMove;
+            p1Turn = false;
+            p2Turn = true;
+            return reds[currentP1];
         }
         if (p2Turn == true) {
-            p2X = p2X + playerMove;
-            if (p2X >= 8) {
-                p2Y++;
-            }
-            p2X = p2X % numCol;
-            return blue10;
+            oldP2 = currentP2;
+            blues[oldP2].setVisible(false);
+            currentP2 = currentP2 + playerMove;
+            p2Turn = false;
+            p3Turn = true;
+            return blues[currentP2];
         }
         if (p3Turn == true) {
-            p3X = p3X + playerMove;
-            if (p3X >= 8) {
-                p3Y++;
-            }
-            p3X = p3X % numCol;
-            return green10;
+            oldP3 = currentP3;
+            greens[oldP3].setVisible(false);
+            currentP3 = currentP3 + playerMove;
+            p3Turn = false;
+            p4Turn = true;
+            return greens[currentP3];
         }
         else{
-            p4X = p4X + playerMove;
-            if (p4X >= 8) {
-                p4Y++;
-            }
-            p4X = p4X % numCol;
-            return yellow10;
+            oldP4 = currentP4;
+            yellows[oldP4].setVisible(false);
+            currentP4 = currentP4 + playerMove;
+            p4Turn = false;
+            p1Turn = true;
+            return yellows[currentP4];
         }
     }
 
@@ -350,7 +353,8 @@ public class gameBoardController implements Initializable {
         JOptionPane.showMessageDialog(null,
                 "You have rolled a " + playerMove, "Player Movement",
                 JOptionPane.INFORMATION_MESSAGE);
-        getImageView(playerMove).setVisible(false);
+        getImageView(playerMove).setVisible(true);
+
     }
 
     /**

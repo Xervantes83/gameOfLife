@@ -37,6 +37,16 @@ public class startScreenController implements Initializable {
     }
 
     /**
+     * sets the rule scene as the main scene when the button is clicked.
+     *
+     * @param event the event
+     */
+    @FXML
+    private void handleRuleButtonAction(final ActionEvent event) {
+        Main.setRuleScene();
+    }
+
+    /**
      * Initializes.
      * @param url no idea what this does, honestly
      * @param rb the resource bundle

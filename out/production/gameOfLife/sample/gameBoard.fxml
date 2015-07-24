@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gameBoardController">
    <children>
       <GridPane alignment="CENTER_LEFT" gridLinesVisible="true" layoutY="76.0" prefHeight="267.0" prefWidth="600.0">
         <columnConstraints>
@@ -63,42 +63,42 @@
                   <Insets top="10.0" />
                </padding>
             </Label>
-            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red10" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red20" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red30" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red40" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red50" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red60" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red70" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red00" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
@@ -143,7 +143,7 @@
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue10" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -153,7 +153,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -163,7 +163,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue20" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -173,7 +173,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue30" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -183,7 +183,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue40" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -193,7 +193,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue50" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -203,7 +203,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue60" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -213,7 +213,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue70" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -223,82 +223,82 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green10" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green20" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green30" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green40" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green50" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green60" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green70" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow10" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow20" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow30" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow40" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow50" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow60" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow70" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>
@@ -710,6 +710,6 @@
             <Font size="40.0" />
          </font>
       </Label>
-      <Button layoutX="14.0" layoutY="355.0" mnemonicParsing="false" text="Roll Die" />
+      <Button fx:id="dieButton" layoutX="14.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleDieButtonAction" text="Roll Die" />
    </children>
 </AnchorPane>

@@ -35,10 +35,10 @@ public class gameBoardController implements Initializable {
     int oldP2;
     int oldP3;
     int oldP4;
-    static int p1Fears;
-    static int p2Fears;
-    static int p3Fears;
-    static int p4Fears;
+    static int p1Fears = 5;
+    static int p2Fears = 5;
+    static int p3Fears = 5;
+    static int p4Fears = 5;
 
 
     /**
@@ -311,13 +311,13 @@ public class gameBoardController implements Initializable {
     private ImageView yellow73;
 
     @FXML
-    private Label Fear1;
+    private Label fear1;
     @FXML
-    private Label Fear2;
+    private Label fear2;
     @FXML
-    private Label Fear3;
+    private Label fear3;
     @FXML
-    private Label Fear4;
+    private Label fear4;
 
 /**
  * @return the imageView
@@ -433,12 +433,12 @@ public class gameBoardController implements Initializable {
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
         red00.setVisible(true);
-        p1Fears = 0;
+        fear1.setText("P1 Fears: " + p1Fears);
         blue00.setVisible(true);
-        p2Fears = 0;
+        fear2.setText("P2 Fears: " + p2Fears);
         green00.setVisible(true);
-        p3Fears = 0;
+        fear3.setText("P3 Fears: " + p3Fears);
         yellow00.setVisible(true);
-        p4Fears = 0;
+        fear4.setText("P4 Fears: " + p4Fears);
     }
 }

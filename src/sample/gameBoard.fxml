@@ -98,7 +98,7 @@
                   <Image url="@Red.svg.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="red00" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="true" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+            <ImageView fx:id="red00" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>
                   <Image url="@Red.svg.png" />
                </image>
@@ -153,7 +153,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="blue00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="true" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+            <ImageView fx:id="blue00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <image>
                   <Image url="@blue.jpg" />
                </image>
@@ -223,7 +223,7 @@
                   <Image url="@blue.jpg" />
                </image>
             </ImageView>
-            <ImageView fx:id="green00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="true" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="green00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@Green_square.svg.png" />
                </image>
@@ -263,7 +263,7 @@
                   <Image url="@Green_square.svg.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="yellow00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="true" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+            <ImageView fx:id="yellow00" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                <image>
                   <Image url="@yellow.jpg" />
                </image>

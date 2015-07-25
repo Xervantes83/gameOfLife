@@ -22,14 +22,14 @@ public class gameBoardController implements Initializable {
 
     final int numRows = 4;
     final int numCol = 8;
-    boolean p1Turn = true;
-    boolean p2Turn = false;
-    boolean p3Turn = false;
-    boolean p4Turn = false;
-    int currentP1 = 0;
-    int currentP2 = 0;
-    int currentP3 = 0;
-    int currentP4 = 0;
+    static boolean p1Turn = true;
+    static boolean p2Turn = false;
+    static boolean p3Turn = false;
+    static boolean p4Turn = false;
+    static int currentP1 = 0;
+    static int currentP2 = 0;
+    static int currentP3 = 0;
+    static int currentP4 = 0;
     int oldP1;
     int oldP2;
     int oldP3;
@@ -312,7 +312,7 @@ public class gameBoardController implements Initializable {
         ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue43, blue53, blue63, blue73};
         ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green43, green53, green63, green73};
         ImageView[] yellows = {yellow00, yellow10, yellow20, yellow30, yellow40, yellow50, yellow60, yellow70, yellow01, yellow11, yellow21, yellow31, yellow41, yellow51, yellow61, yellow71, yellow02, yellow12, yellow22, yellow32, yellow42, yellow52, yellow62, yellow72, yellow03, yellow13, yellow23, yellow43, yellow53, yellow63, yellow73};
-        if (p1Turn == true) {
+        if (p1Turn) {
             oldP1 = currentP1;
             reds[oldP1].setVisible(false);
             currentP1 = currentP1 + playerMove;
@@ -321,7 +321,7 @@ public class gameBoardController implements Initializable {
             playerLabel.setText("Player 2 Turn");
             return reds[currentP1];
         }
-        if (p2Turn == true) {
+        if (p2Turn) {
             oldP2 = currentP2;
             blues[oldP2].setVisible(false);
             currentP2 = currentP2 + playerMove;
@@ -330,7 +330,7 @@ public class gameBoardController implements Initializable {
             playerLabel.setText("Player 3 Turn");
             return blues[currentP2];
         }
-        if (p3Turn == true) {
+        if (p3Turn) {
             oldP3 = currentP3;
             greens[oldP3].setVisible(false);
             currentP3 = currentP3 + playerMove;
@@ -365,8 +365,27 @@ public class gameBoardController implements Initializable {
         JOptionPane.showMessageDialog(null,
                 "You have rolled a " + playerMove, "Player Movement",
                 JOptionPane.INFORMATION_MESSAGE);
+        questionScreenController.setTitleLabel("YAY!");
         Main.setQuestionScreenScene();
 
+    }
+
+    /**
+     * get player location
+     */
+    public static int getPlayerLocation() {
+        if (p1Turn) {
+            return currentP1;
+        }
+        else if (p2Turn) {
+            return currentP2;
+        }
+         else if (p3Turn) {
+            return currentP3;
+        }
+        else {
+            return currentP4;
+        }
     }
 
 
@@ -377,7 +396,10 @@ public class gameBoardController implements Initializable {
      */
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
-        // TODO
+        red00.setVisible(true);
+        blue00.setVisible(true);
+        green00.setVisible(true);
+        yellow00.setVisible(true);
     }
 
 }

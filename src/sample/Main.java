@@ -15,15 +15,29 @@ public class Main extends Application {
     private static Scene ruleScreen;
     private static Scene questionScreen;
     private static Scene choiceScreen;
+    private static String[] names;
+    private static int[] lifeTiles;
+    private static int[] academicTiles;
+    private static int[] personalTiles;
+    private static int[] summerTiles;
 
     @Override
     public void start(Stage stage) throws Exception{
+                int lifeTiles[] = {1, 4, 10, 13, 19, 22, 25, 28};
+                this.lifeTiles = lifeTiles;
+                int academicTiles[] = {2, 5, 11, 14, 17, 20, 26, 29};
+                this.academicTiles = academicTiles;
+                int personalTiles[] = {3, 6, 9, 12, 18, 21, 27, 30};
+                this.personalTiles = personalTiles;
+                int summerTiles[] = {7, 15, 23, 31};
+                this.summerTiles = summerTiles;
                 String[] names = {"Life Problems", "Academic Problems", "Personal Problems"};
+                this.names = names;
                 ArrayList<ArrayList<String>> lifeQuestions = new ArrayList<ArrayList<String>>();
                 ArrayList<ArrayList<String>> academicQuestions = new ArrayList<ArrayList<String>>();
                 ArrayList<ArrayList<String>> personalQuestions = new ArrayList<ArrayList<String>>();
                 lifeQuestions.add(new ArrayList<String>());
-                lifeQuestions.get(0).add("You discover that you need to work in order to attend college");
+        lifeQuestions.get(0).add("You discover that you need to work in order to attend college");
                 lifeQuestions.get(0).add("A close family member falls ill and you go see your advisor");
                 lifeQuestions.get(0).add("You are concerned about employment upon graduation");
                 lifeQuestions.get(0).add("You are still evaluating your life's course options");
@@ -45,8 +59,8 @@ public class Main extends Application {
                 lifeQuestions.get(0).add("You are having problems with your girlfriend/boyfriend");
                 lifeQuestions.get(0).add("You are a closeted LGBTQ individual who wants to come out");
                 lifeQuestions.get(0).add("You are an older student getting re-acclaimated to college");
-                lifeQuestions.add(new ArrayList<String>());
-                lifeQuestions.get(1).add("The advisor suggests a class schedule for you with no regard for your work schedule because these are the classes a STEM major has to take\nGain one fear");
+        lifeQuestions.add(new ArrayList<String>());
+        lifeQuestions.get(1).add("The advisor suggests a class schedule for you with no regard for your work schedule because these are the classes a STEM major has to take\nGain one fear");
                 lifeQuestions.get(1).add("The advisor empathizes with you and tells you things will get better, and also advises you on campus resources available.  They also follow up at a later time\nLose one fear");
                 lifeQuestions.get(1).add("The advisor connects you with campus resources\n" +
                         "Lose one fear");
@@ -88,9 +102,9 @@ public class Main extends Application {
                         "Gain one fear");
                 lifeQuestions.get(1).add("The advisor takes the time to show you some different things regarding the institution\n" +
                         "Lose one Fear");
-                lifeQuestions.add(new ArrayList<String>());
-                lifeQuestions.get(2).add("The advisor takes into account your work obligations and provides you with suggestions as how to manage\n" +
-                        "Lose one fear");
+        lifeQuestions.add(new ArrayList<String>());
+        lifeQuestions.get(2).add("The advisor takes into account your work obligations and provides you with suggestions as how to manage\n" +
+                "Lose one fear");
                 lifeQuestions.get(2).add("Your advisor empathizes with you and tells you things will get better, but not much else is done.\n" +
                         "Gain one fear");
                 lifeQuestions.get(2).add("The advisor says there are resources on campus to help you, but they cannot tell you about them because they don’t know.\n" +
@@ -133,10 +147,10 @@ public class Main extends Application {
                 lifeQuestions.get(2).add("The advisor shows you a litany of websites containing information that you should read\n" +
                         "        Gain one fear");
 
+        academicQuestions.add(new ArrayList<String>());
                 academicQuestions.add(new ArrayList<String>());
                 academicQuestions.add(new ArrayList<String>());
-                academicQuestions.add(new ArrayList<String>());
-                academicQuestions.get(0).add("You have switched into a STEM major and found it difficult");
+        academicQuestions.get(0).add("You have switched into a STEM major and found it difficult");
                 academicQuestions.get(0).add("You are stuggling with the core class in the curriculum and have had a hard time reaching professors and TA's for support");
                 academicQuestions.get(0).add("You are taking the introductory course for the STEM major and find yourself woefully underprepared. The concepts are over your head and you confide in your advisor.");
                 academicQuestions.get(0).add("You are unaware of the courses being offered for the semester,");
@@ -197,11 +211,11 @@ public class Main extends Application {
                 academicQuestions.get(2).add("The advisor says 'you'll be fine' and that's the end of the conversation\n" +
                         "Gain one fear");
 
-                personalQuestions.add(new ArrayList<String>());
+        personalQuestions.add(new ArrayList<String>());
                 personalQuestions.add(new ArrayList<String>());
                 personalQuestions.add(new ArrayList<String>());
 
-                personalQuestions.get(0).add("You are living along for the first time");
+        personalQuestions.get(0).add("You are living along for the first time");
                 personalQuestions.get(0).add("You are feeling overwhelmed and you would like someone to talk to");
                 personalQuestions.get(0).add("You find yourself bored in school");
                 personalQuestions.get(0).add("You have missed several classes that result in your grade dropping");
@@ -287,6 +301,32 @@ public class Main extends Application {
         PrimaryStage.setTitle("The Game of Life");
         PrimaryStage.setScene(main);
         PrimaryStage.show();
+    }
+
+
+    public static String getQuestionTitle (int key) {
+        System.out.println(key);
+        for (int i : lifeTiles ) {
+            if (i == key) {
+                return names[0];
+            }
+        }
+        for (int i : academicTiles ) {
+            if (i == key) {
+                return names[1];
+            }
+        }
+        for (int i : personalTiles ) {
+            if (i == key) {
+                return names[2];
+            }
+        }
+        for (int i : summerTiles ) {
+            if (i == key) {
+                return names[2];
+            }
+        }
+        return "New School Year";
     }
 
     /**

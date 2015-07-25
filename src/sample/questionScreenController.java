@@ -18,6 +18,12 @@ public class questionScreenController implements Initializable {
      */
     @FXML
     private Label titleLabel;
+    
+    private static String titleLabelString;
+
+    public static void setTitleLabel(String joe) {
+        titleLabelString = joe;
+    }
 
     /**
      * @variable the question label
@@ -47,6 +53,7 @@ public class questionScreenController implements Initializable {
         Main.setChoiceScreenScene();
     }
 
+
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -54,7 +61,6 @@ public class questionScreenController implements Initializable {
      */
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
-        // TODO
     }
 
 }

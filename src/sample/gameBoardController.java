@@ -310,6 +310,15 @@ public class gameBoardController implements Initializable {
     @FXML
     private ImageView yellow73;
 
+    @FXML
+    private Label Fear1;
+    @FXML
+    private Label Fear2;
+    @FXML
+    private Label Fear3;
+    @FXML
+    private Label Fear4;
+
 /**
  * @return the imageView
  */

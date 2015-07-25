@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class Main extends Application {
 
-    private static Stage PrimaryStage;
+    static Stage PrimaryStage;
     private static Scene main;
     private static Scene gameBoardScreen;
     private static Scene ruleScreen;

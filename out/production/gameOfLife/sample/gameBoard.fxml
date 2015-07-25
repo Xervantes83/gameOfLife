@@ -59,9 +59,10 @@
             <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="2" />
             <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="3" />
             <Label text="Life" GridPane.columnIndex="1">
-               <padding>
+               <Label style="-fx-font-weight: bold; -fx-label-padding: 6 0 18 6;" text="Storage Overview Home"
+                      VBox.vgrow="NEVER">
                   <Insets top="10.0" />
-               </padding>
+               </Label>
             </Label>
             <ImageView fx:id="red10" disable="true" fitHeight="21.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                <image>

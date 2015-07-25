@@ -365,9 +365,8 @@ public class gameBoardController implements Initializable {
         JOptionPane.showMessageDialog(null,
                 "You have rolled a " + playerMove, "Player Movement",
                 JOptionPane.INFORMATION_MESSAGE);
-        questionScreenController.setTitleLabel("YAY!");
+        questionScreenController.titleLabel.setText(Main.getQuestionTitle(getPlayerLocation()));
         Main.setQuestionScreenScene();
-
     }
 
     /**

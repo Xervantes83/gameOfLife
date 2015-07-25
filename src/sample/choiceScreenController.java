@@ -18,7 +18,9 @@ public class choiceScreenController implements Initializable {
      * @variable the choice label
      */
     @FXML
-    private Label choiceLabel;
+    private Label choiceLabel_;
+
+    public static Label choiceLabel;
 
     /**
      * @variable the button to return to gameBoard
@@ -43,6 +45,6 @@ public class choiceScreenController implements Initializable {
      */
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
-        // TODO
+        choiceLabel_ = choiceLabel;
     }
 }

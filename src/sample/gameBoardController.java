@@ -16,6 +16,7 @@ import javafx.scene.image.ImageView;
 import java.lang.Integer;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.canvas.Canvas;
+import java.util.ArrayList;
 
 
 public class gameBoardController implements Initializable {
@@ -316,8 +317,6 @@ public class gameBoardController implements Initializable {
             oldP1 = currentP1;
             reds[oldP1].setVisible(false);
             currentP1 = currentP1 + playerMove;
-            p1Turn = false;
-            p2Turn = true;
             playerLabel.setText("Player 2 Turn");
             return reds[currentP1];
         }
@@ -325,8 +324,6 @@ public class gameBoardController implements Initializable {
             oldP2 = currentP2;
             blues[oldP2].setVisible(false);
             currentP2 = currentP2 + playerMove;
-            p2Turn = false;
-            p3Turn = true;
             playerLabel.setText("Player 3 Turn");
             return blues[currentP2];
         }
@@ -334,8 +331,6 @@ public class gameBoardController implements Initializable {
             oldP3 = currentP3;
             greens[oldP3].setVisible(false);
             currentP3 = currentP3 + playerMove;
-            p3Turn = false;
-            p4Turn = true;
             playerLabel.setText("Player 4 Turn");
             return greens[currentP3];
         }
@@ -343,14 +338,14 @@ public class gameBoardController implements Initializable {
             oldP4 = currentP4;
             yellows[oldP4].setVisible(false);
             currentP4 = currentP4 + playerMove;
-            p4Turn = false;
-            p1Turn = true;
             playerLabel.setText("Player 1 Turn");
             return yellows[currentP4];
         }
     }
 
-
+    public static int lifeQuestNum = 0;
+    public static int acaQuestNum = 0;
+    public static int persQuestNum = 0;
     /**
      * rolls a die to generate random number from 1-6 when the button is clicked.
      * and moves character icon to match it
@@ -358,15 +353,45 @@ public class gameBoardController implements Initializable {
      */
     @FXML
     private void handleDieButtonAction(final ActionEvent event) {
-        int temp = 0;
         int playerMove;
         playerMove = (int)(Math.random() * 6) + 1;
         getImageView(playerMove).setVisible(true);
         JOptionPane.showMessageDialog(null,
                 "You have rolled a " + playerMove, "Player Movement",
                 JOptionPane.INFORMATION_MESSAGE);
-        questionScreenController.titleLabel.setText(Main.getQuestionTitle(getPlayerLocation()));
+        System.out.println(currentP1 + " - " + currentP2 + " - " + currentP3 + " - " + currentP4);
+        String tempName = Main.getQuestionTitle(getPlayerLocation());
+        questionScreenController.titleLabel.setText(tempName);
+
+        String temp = "";
+        if(tempName.equals("Life Problems")) {
+            temp = Main.lifeQuestions.get(0).get(lifeQuestNum);
+        } else if(tempName.equals("Academic Problems")) {
+            temp = Main.academicQuestions.get(0).get(acaQuestNum);
+        } else if(tempName.equals("Personal Problems")) {
+            temp = Main.personalQuestions.get(0).get(persQuestNum);
+        }
+
+        questionScreenController.questionLabel.setText(temp);
         Main.setQuestionScreenScene();
+    }
+
+    public static void switchTurns() {
+        if (p1Turn) {
+            p1Turn = false;
+            p2Turn = true;
+        } else if (p2Turn) {
+            p2Turn = false;
+            p3Turn = true;
+        } else if (p3Turn) {
+            p3Turn = false;
+            p4Turn = true;
+        } else if (p4Turn) {
+            p4Turn = false;
+            p1Turn = true;
+        } else {
+            return;
+        }
     }
 
     /**
@@ -375,15 +400,14 @@ public class gameBoardController implements Initializable {
     public static int getPlayerLocation() {
         if (p1Turn) {
             return currentP1;
-        }
-        else if (p2Turn) {
+        } else if (p2Turn) {
             return currentP2;
-        }
-         else if (p3Turn) {
+        } else if (p3Turn) {
             return currentP3;
-        }
-        else {
+        } else if (p4Turn){
             return currentP4;
+        } else {
+            return 0;
         }
     }
 

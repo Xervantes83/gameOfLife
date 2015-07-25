@@ -16,6 +16,7 @@ public class questionScreenController implements Initializable {
     /**
      * @variable the title label
      */
+
     @FXML
     private Label titleLabel_;
 
@@ -31,7 +32,9 @@ public class questionScreenController implements Initializable {
      * @variable the question label
      */
     @FXML
-    private Label questionLabel;
+    private Label questionLabel_;
+
+    public static Label questionLabel;
 
     /**
      * @variable button to choose choice 1
@@ -51,10 +54,44 @@ public class questionScreenController implements Initializable {
      * @param event the event
      */
     @FXML
-    private void handleChoiceButtonAction(final ActionEvent event) {
+    private void handleChoice1ButtonAction(final ActionEvent event) {
+        String tempName = Main.getQuestionTitle(gameBoardController.getPlayerLocation());
+        questionScreenController.titleLabel.setText(tempName);
+        gameBoardController.switchTurns();
+        String temp = "";
+        if(tempName.equals("Life Problems")) {
+            temp = Main.lifeQuestions.get(1).get(gameBoardController.lifeQuestNum);
+            gameBoardController.lifeQuestNum++;
+        } else if(tempName.equals("Academic Problems")) {
+            temp = Main.academicQuestions.get(1).get(gameBoardController.acaQuestNum);
+            gameBoardController.acaQuestNum++;
+        } else if(tempName.equals("Personal Problems")) {
+            temp = Main.personalQuestions.get(1).get(gameBoardController.persQuestNum);
+            gameBoardController.persQuestNum++;
+        }
+        choiceScreenController.choiceLabel.setText(temp);
         Main.setChoiceScreenScene();
     }
 
+    @FXML
+    private void handleChoice2ButtonAction(final ActionEvent event) {
+        String tempName = Main.getQuestionTitle(gameBoardController.getPlayerLocation());
+        questionScreenController.titleLabel.setText(tempName);
+        gameBoardController.switchTurns();
+        String temp = "";
+        if(tempName.equals("Life Problems")) {
+            temp = Main.lifeQuestions.get(2).get(gameBoardController.lifeQuestNum);
+            gameBoardController.lifeQuestNum++;
+        } else if(tempName.equals("Academic Problems")) {
+            temp = Main.academicQuestions.get(2).get(gameBoardController.acaQuestNum);
+            gameBoardController.acaQuestNum++;
+        } else if(tempName.equals("Personal Problems")) {
+            temp = Main.personalQuestions.get(2).get(gameBoardController.persQuestNum);
+            gameBoardController.persQuestNum++;
+        }
+        choiceScreenController.choiceLabel.setText(temp);
+        Main.setChoiceScreenScene();
+    }
 
     /**
      * Initializes.
@@ -64,6 +101,6 @@ public class questionScreenController implements Initializable {
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
         titleLabel_ = titleLabel;
+        questionLabel_ = questionLabel;
     }
-
 }

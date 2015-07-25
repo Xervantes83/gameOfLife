@@ -10,9 +10,9 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.questionScreenController">
    <children>
-      <Button fx:id="choice1Button" layoutX="149.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleChoiceButtonAction" text="Choice 1" />
-      <Button fx:id="choice2Button" layoutX="355.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleChoiceButtonAction" text="Choice 2" />
-      <Label fx:id="questionLabel" layoutX="12.0" layoutY="73.0" prefHeight="168.0" prefWidth="579.0" text="Label" />
+      <Button fx:id="choice1Button" layoutX="149.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleChoice1ButtonAction" text="Choice 1" />
+      <Button fx:id="choice2Button" layoutX="355.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleChoice2ButtonAction" text="Choice 2" />
+      <Label fx:id="questionLabel" layoutX="12.0" layoutY="73.0" prefHeight="168.0" prefWidth="579.0" text="Label" wrapText="true" />
       <Label fx:id="titleLabel" layoutX="244.0" layoutY="7.0" text="Label">
          <font>
             <Font size="40.0" />

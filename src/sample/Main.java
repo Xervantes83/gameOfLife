@@ -20,6 +20,9 @@ public class Main extends Application {
     private static int[] academicTiles;
     private static int[] personalTiles;
     private static int[] summerTiles;
+    public static ArrayList<ArrayList<String>> lifeQuestions;
+    public static ArrayList<ArrayList<String>> academicQuestions;
+    public static ArrayList<ArrayList<String>> personalQuestions;
 
     @Override
     public void start(Stage stage) throws Exception{
@@ -34,10 +37,13 @@ public class Main extends Application {
                 String[] names = {"Life Problems", "Academic Problems", "Personal Problems"};
                 this.names = names;
                 ArrayList<ArrayList<String>> lifeQuestions = new ArrayList<ArrayList<String>>();
+                this.lifeQuestions = lifeQuestions;
                 ArrayList<ArrayList<String>> academicQuestions = new ArrayList<ArrayList<String>>();
+                this.academicQuestions = academicQuestions;
                 ArrayList<ArrayList<String>> personalQuestions = new ArrayList<ArrayList<String>>();
+                this.personalQuestions = personalQuestions;
                 lifeQuestions.add(new ArrayList<String>());
-        lifeQuestions.get(0).add("You discover that you need to work in order to attend college");
+                lifeQuestions.get(0).add("You discover that you need to work in order to attend college");
                 lifeQuestions.get(0).add("A close family member falls ill and you go see your advisor");
                 lifeQuestions.get(0).add("You are concerned about employment upon graduation");
                 lifeQuestions.get(0).add("You are still evaluating your life's course options");
@@ -145,12 +151,12 @@ public class Main extends Application {
                 lifeQuestions.get(2).add("The advisor listens to your situation and links you with campus resources.\n" +
                         "Lose one fear");
                 lifeQuestions.get(2).add("The advisor shows you a litany of websites containing information that you should read\n" +
-                        "        Gain one fear");
+                        "Gain one fear");
 
-        academicQuestions.add(new ArrayList<String>());
                 academicQuestions.add(new ArrayList<String>());
                 academicQuestions.add(new ArrayList<String>());
-        academicQuestions.get(0).add("You have switched into a STEM major and found it difficult");
+                academicQuestions.add(new ArrayList<String>());
+                academicQuestions.get(0).add("You have switched into a STEM major and found it difficult");
                 academicQuestions.get(0).add("You are stuggling with the core class in the curriculum and have had a hard time reaching professors and TA's for support");
                 academicQuestions.get(0).add("You are taking the introductory course for the STEM major and find yourself woefully underprepared. The concepts are over your head and you confide in your advisor.");
                 academicQuestions.get(0).add("You are unaware of the courses being offered for the semester,");
@@ -305,7 +311,6 @@ public class Main extends Application {
 
 
     public static String getQuestionTitle (int key) {
-        System.out.println(key);
         for (int i : lifeTiles ) {
             if (i == key) {
                 return names[0];

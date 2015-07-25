@@ -35,6 +35,11 @@ public class gameBoardController implements Initializable {
     int oldP2;
     int oldP3;
     int oldP4;
+    static int p1Fears;
+    static int p2Fears;
+    static int p3Fears;
+    static int p4Fears;
+
 
     /**
      * @variable dieButton button to roll a Die
@@ -411,7 +416,6 @@ public class gameBoardController implements Initializable {
         }
     }
 
-
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -420,9 +424,12 @@ public class gameBoardController implements Initializable {
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
         red00.setVisible(true);
+        p1Fears = 0;
         blue00.setVisible(true);
+        p2Fears = 0;
         green00.setVisible(true);
+        p3Fears = 0;
         yellow00.setVisible(true);
+        p4Fears = 0;
     }
-
 }

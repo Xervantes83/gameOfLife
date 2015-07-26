@@ -311,13 +311,25 @@ public class gameBoardController implements Initializable {
     private ImageView yellow73;
 
     @FXML
-    private Label fear1;
+    private Label fear1_;
+
+    public static Label fear1;
+
     @FXML
-    private Label fear2;
+    private Label fear2_;
+
+    public static Label fear2;
+
     @FXML
-    private Label fear3;
+    private Label fear3_;
+
+    public static Label fear3;
+
+
     @FXML
-    private Label fear4;
+    private Label fear4_;
+
+    public static Label fear4;
 
 /**
  * @return the imageView
@@ -432,6 +444,10 @@ public class gameBoardController implements Initializable {
      */
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
+        fear1_ = fear1;
+        fear2_ = fear2;
+        fear3_ = fear3;
+        fear4_ = fear4;
         red00.setVisible(true);
         fear1.setText("P1 Fears: " + p1Fears);
         blue00.setVisible(true);

@@ -110,7 +110,7 @@ public class Main extends Application {
                         "Lose one Fear");
         lifeQuestions.add(new ArrayList<String>());
         lifeQuestions.get(2).add("The advisor takes into account your work obligations and provides you with suggestions as how to manage\n" +
-                "Lose one fear");
+                    "Lose one fear");
                 lifeQuestions.get(2).add("Your advisor empathizes with you and tells you things will get better, but not much else is done.\n" +
                         "Gain one fear");
                 lifeQuestions.get(2).add("The advisor says there are resources on campus to help you, but they cannot tell you about them because they don’t know.\n" +
@@ -145,7 +145,7 @@ public class Main extends Application {
                 lifeQuestions.get(2).add("The advisor feels like this is your personal standard and therefore doesn’t say anything\n" +
                         "Gain one fear");
                 lifeQuestions.get(2).add("The advisor recognizes that stereotypes are causing you pressure and therefore assuages you in countering the stereotypes, as well as linking you to available resources.\n" +
-                        "]Lose one fear");
+                        "Lose one fear");
                 lifeQuestions.get(2).add("The advisor cant speak with you regarding personal matters\n" +
                         "Gain one fear");
                 lifeQuestions.get(2).add("The advisor listens to your situation and links you with campus resources.\n" +
@@ -263,31 +263,31 @@ public class Main extends Application {
                         "Gain one fear");
 
                 personalQuestions.get(2).add("The advisor introduces you to other students in your situation\n" +
-                        "        Lose one fear");
+                        "Lose one fear");
                 personalQuestions.get(2).add("You tell the advisor that you are overwhelmed; because it is noon, they go to lunch and tell you to schedule an appointment\n" +
-                        "        gain one fear");
+                        "Gain one fear");
                 personalQuestions.get(2).add("The advisor tells you that you need to mature\n" +
-                        "        gain one fear");
+                        "Gain one fear");
                 personalQuestions.get(2).add("The advisor has been notified and they reach out to you to see what's going on.\n" +
-                        "        Lose one Fear");
+                        "Lose one Fear");
                 personalQuestions.get(2).add("The advisor recommends youstart homework early, create a schedule and stick to it.They even show you an example or two.\n" +
-                        "        Lose one fear");
+                        "Lose one fear");
                 personalQuestions.get(2).add("The advisor tell you that you will fail if you don’t pick it up!\n" +
-                        "        Gain one fear");
+                        "Gain one fear");
                 personalQuestions.get(2).add("The advisor helps you have a customized academic support plan which includes tutoring and other mechanisms designed to help you do better.\n" +
-                        "        Lose one fear");
+                        "Lose one fear");
                 personalQuestions.get(2).add("Kanye Strug\n" +
-                        "        Gain one fear");
+                        "Gain one fear");
                 personalQuestions.get(2).add("The advisor has a conversation with you about why you felt the need to cheat and helps provide some strategies to avoid such actions in the future (academic support, professor outreach, etc)\n" +
-                        "        Lose one fear");
+                        "Lose one fear");
                 personalQuestions.get(2).add("The advisor signs your form.  You're someone else's problem now\n" +
-                        "        Gain one fear");
+                        "Gain one fear");
                 personalQuestions.get(2).add("Your advisor shows you information regarding employment of alums\n" +
-                        "        Lose one fear");
+                        "Lose one fear");
                 personalQuestions.get(2).add("The advisor talks with you about graduate school and connects you with an expert\n" +
-                        "        Lose one fear");
+                        "Lose one fear");
                 personalQuestions.get(2).add("The advisor introduces you to other students in your situation\n" +
-                        "        Lose one fear");
+                        "Lose one fear");
 
 
         Parent root = FXMLLoader.load(getClass().getResource("startScreen.fxml"));

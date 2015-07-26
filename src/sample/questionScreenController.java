@@ -57,7 +57,6 @@ public class questionScreenController implements Initializable {
     private void handleChoice1ButtonAction(final ActionEvent event) {
         String tempName = Main.getQuestionTitle(gameBoardController.getPlayerLocation());
         questionScreenController.titleLabel.setText(tempName);
-        gameBoardController.switchTurns();
         String temp = "";
         if(tempName.equals("Life Problems")) {
             temp = Main.lifeQuestions.get(1).get(gameBoardController.lifeQuestNum);
@@ -69,6 +68,41 @@ public class questionScreenController implements Initializable {
             temp = Main.personalQuestions.get(1).get(gameBoardController.persQuestNum);
             gameBoardController.persQuestNum++;
         }
+        String lastPhrase = "";
+        lastPhrase = temp.substring(temp.lastIndexOf("\n")+1);
+        System.out.println(lastPhrase);
+        if (lastPhrase.substring(0,4).equals("Gain")) {
+            if (gameBoardController.p1Turn) {
+                gameBoardController.p1Fears ++;
+            } else if (gameBoardController.p2Turn) {
+                gameBoardController.p2Fears ++;
+            } else if (gameBoardController.p3Turn) {
+                gameBoardController.p3Fears ++;
+            } else if (gameBoardController.p4Turn) {
+                gameBoardController.p4Fears ++;
+            } else {
+                return;
+            }
+        } else {
+            if (gameBoardController.p1Turn) {
+                gameBoardController.p1Fears--;
+            } else if (gameBoardController.p2Turn) {
+                gameBoardController.p2Fears--;
+            } else if (gameBoardController.p3Turn) {
+                gameBoardController.p3Fears--;
+            } else if (gameBoardController.p4Turn) {
+                gameBoardController.p4Fears--;
+            } else {
+                return;
+            }
+        }
+
+        gameBoardController.fear1.setText("P1 Fears: " + gameBoardController.p1Fears);
+        gameBoardController.fear2.setText("P2 Fears: " + gameBoardController.p2Fears);
+        gameBoardController.fear3.setText("P3 Fears: " + gameBoardController.p3Fears);
+        gameBoardController.fear4.setText("P4 Fears: " + gameBoardController.p4Fears);
+
+        gameBoardController.switchTurns();
         choiceScreenController.choiceLabel.setText(temp);
         Main.setChoiceScreenScene();
     }
@@ -77,7 +111,6 @@ public class questionScreenController implements Initializable {
     private void handleChoice2ButtonAction(final ActionEvent event) {
         String tempName = Main.getQuestionTitle(gameBoardController.getPlayerLocation());
         questionScreenController.titleLabel.setText(tempName);
-        gameBoardController.switchTurns();
         String temp = "";
         if(tempName.equals("Life Problems")) {
             temp = Main.lifeQuestions.get(2).get(gameBoardController.lifeQuestNum);
@@ -89,6 +122,40 @@ public class questionScreenController implements Initializable {
             temp = Main.personalQuestions.get(2).get(gameBoardController.persQuestNum);
             gameBoardController.persQuestNum++;
         }
+        String lastPhrase = "";
+        lastPhrase = temp.substring(temp.lastIndexOf("\n")+1);
+        if (lastPhrase.substring(0,4).equals("Gain")) {
+            if (gameBoardController.p1Turn) {
+                gameBoardController.p1Fears ++;
+            } else if (gameBoardController.p2Turn) {
+                gameBoardController.p2Fears ++;
+            } else if (gameBoardController.p3Turn) {
+                gameBoardController.p3Fears ++;
+            } else if (gameBoardController.p4Turn) {
+                gameBoardController.p4Fears ++;
+            } else {
+                return;
+            }
+        } else {
+            if (gameBoardController.p1Turn) {
+                gameBoardController.p1Fears--;
+            } else if (gameBoardController.p2Turn) {
+                gameBoardController.p2Fears--;
+            } else if (gameBoardController.p3Turn) {
+                gameBoardController.p3Fears--;
+            } else if (gameBoardController.p4Turn) {
+                gameBoardController.p4Fears--;
+            } else {
+                return;
+            }
+        }
+
+        gameBoardController.fear1.setText("P1 Fears: " + gameBoardController.p1Fears);
+        gameBoardController.fear2.setText("P2 Fears: " + gameBoardController.p2Fears);
+        gameBoardController.fear3.setText("P3 Fears: " + gameBoardController.p3Fears);
+        gameBoardController.fear4.setText("P4 Fears: " + gameBoardController.p4Fears);
+
+        gameBoardController.switchTurns();
         choiceScreenController.choiceLabel.setText(temp);
         Main.setChoiceScreenScene();
     }

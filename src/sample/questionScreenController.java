@@ -61,16 +61,24 @@ public class questionScreenController implements Initializable {
         if(tempName.equals("Life Problems")) {
             temp = Main.lifeQuestions.get(1).get(gameBoardController.lifeQuestNum);
             gameBoardController.lifeQuestNum++;
+            if (gameBoardController.lifeQuestNum == Main.lifeQuestions.get(0).size()) {
+                gameBoardController.lifeQuestNum = 0;
+            }
         } else if(tempName.equals("Academic Problems")) {
             temp = Main.academicQuestions.get(1).get(gameBoardController.acaQuestNum);
             gameBoardController.acaQuestNum++;
+            if (gameBoardController.acaQuestNum == Main.academicQuestions.get(0).size()) {
+                gameBoardController.acaQuestNum = 0;
+            }
         } else if(tempName.equals("Personal Problems")) {
             temp = Main.personalQuestions.get(1).get(gameBoardController.persQuestNum);
             gameBoardController.persQuestNum++;
+            if (gameBoardController.persQuestNum == Main.personalQuestions.get(0).size()) {
+                gameBoardController.persQuestNum = 0;
+            }
         }
         String lastPhrase = "";
         lastPhrase = temp.substring(temp.lastIndexOf("\n")+1);
-        System.out.println(lastPhrase);
         if (lastPhrase == "") {
             if (gameBoardController.p1Turn) {
                 gameBoardController.p1Fears-=2;
@@ -125,26 +133,48 @@ public class questionScreenController implements Initializable {
         questionScreenController.titleLabel.setText(tempName);
         String temp = "";
         if(tempName.equals("Life Problems")) {
-            temp = Main.lifeQuestions.get(2).get(gameBoardController.lifeQuestNum);
+            temp = Main.lifeQuestions.get(1).get(gameBoardController.lifeQuestNum);
             gameBoardController.lifeQuestNum++;
+            if (gameBoardController.lifeQuestNum == Main.lifeQuestions.get(0).size()) {
+                gameBoardController.lifeQuestNum = 0;
+            }
         } else if(tempName.equals("Academic Problems")) {
-            temp = Main.academicQuestions.get(2).get(gameBoardController.acaQuestNum);
+            temp = Main.academicQuestions.get(1).get(gameBoardController.acaQuestNum);
             gameBoardController.acaQuestNum++;
+            if (gameBoardController.acaQuestNum == Main.academicQuestions.get(0).size()) {
+                gameBoardController.acaQuestNum = 0;
+            }
         } else if(tempName.equals("Personal Problems")) {
-            temp = Main.personalQuestions.get(2).get(gameBoardController.persQuestNum);
+            temp = Main.personalQuestions.get(1).get(gameBoardController.persQuestNum);
             gameBoardController.persQuestNum++;
+            if (gameBoardController.persQuestNum == Main.personalQuestions.get(0).size()) {
+                gameBoardController.persQuestNum = 0;
+            }
         }
         String lastPhrase = "";
         lastPhrase = temp.substring(temp.lastIndexOf("\n")+1);
-        if (lastPhrase.substring(0,4).equals("Gain")) {
+
+        if (lastPhrase == "") {
             if (gameBoardController.p1Turn) {
-                gameBoardController.p1Fears ++;
+                gameBoardController.p1Fears-=2;
             } else if (gameBoardController.p2Turn) {
-                gameBoardController.p2Fears ++;
+                gameBoardController.p2Fears-=2;
             } else if (gameBoardController.p3Turn) {
-                gameBoardController.p3Fears ++;
+                gameBoardController.p3Fears-=2;
             } else if (gameBoardController.p4Turn) {
-                gameBoardController.p4Fears ++;
+                gameBoardController.p4Fears-=2;
+            } else {
+                return;
+            }
+        }else if (lastPhrase.substring(0,4).equals("Gain")) {
+            if (gameBoardController.p1Turn) {
+                gameBoardController.p1Fears++;
+            } else if (gameBoardController.p2Turn) {
+                gameBoardController.p2Fears++;
+            } else if (gameBoardController.p3Turn) {
+                gameBoardController.p3Fears++;
+            } else if (gameBoardController.p4Turn) {
+                gameBoardController.p4Fears++;
             } else {
                 return;
             }

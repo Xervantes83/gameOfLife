@@ -337,11 +337,12 @@ public class gameBoardController implements Initializable {
  * @return the imageView
  */
     public final ImageView getImageView(int playerMove) throws Exception {
-        ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red43, red53, red63, red73};
-        ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue43, blue53, blue63, blue73};
-        ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green43, green53, green63, green73};
-        ImageView[] yellows = {yellow00, yellow10, yellow20, yellow30, yellow40, yellow50, yellow60, yellow70, yellow01, yellow11, yellow21, yellow31, yellow41, yellow51, yellow61, yellow71, yellow02, yellow12, yellow22, yellow32, yellow42, yellow52, yellow62, yellow72, yellow03, yellow13, yellow23, yellow43, yellow53, yellow63, yellow73};
+        ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red33, red43, red53, red63, red73};
+        ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue33, blue43, blue53, blue63, blue73};
+        ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green33, green43, green53, green63, green73};
+        ImageView[] yellows = {yellow00, yellow10, yellow20, yellow30, yellow40, yellow50, yellow60, yellow70, yellow01, yellow11, yellow21, yellow31, yellow41, yellow51, yellow61, yellow71, yellow02, yellow12, yellow22, yellow32, yellow42, yellow52, yellow62, yellow72, yellow03, yellow13, yellow23, yellow33, yellow43, yellow53, yellow63, yellow73};
         if (p1Turn) {
+            System.out.println(reds.length + " - " + blues.length + " - " + greens.length + " - " + yellows.length);
             oldP1 = currentP1;
             reds[oldP1].setVisible(false);
             currentP1 = currentP1 + playerMove;
@@ -349,7 +350,9 @@ public class gameBoardController implements Initializable {
                 JOptionPane.showMessageDialog(null,
                         "Congratulations to Player 1 for Winning!", "We have a Winner!",
                         JOptionPane.INFORMATION_MESSAGE);
-                        throw new IOException();
+                currentP1 = 31;
+                reds[currentP1].setVisible(true);
+                throw new IOException();
             } else {
                 playerLabel.setText("Player 2 Turn");
                 return reds[currentP1];
@@ -363,7 +366,9 @@ public class gameBoardController implements Initializable {
                 JOptionPane.showMessageDialog(null,
                         "Congratulations to Player 2 for Winning!", "We have a Winner!",
                         JOptionPane.INFORMATION_MESSAGE);
-                        throw new IOException();
+                currentP2 = 31;
+                blues[currentP2].setVisible(true);
+                throw new IOException();
             } else {
                 playerLabel.setText("Player 3 Turn");
                 return blues[currentP2];
@@ -377,7 +382,9 @@ public class gameBoardController implements Initializable {
                 JOptionPane.showMessageDialog(null,
                         "Congratulations to Player 3 for Winning!", "We have a Winner!",
                         JOptionPane.INFORMATION_MESSAGE);
-                        throw new IOException();
+                currentP3 = 31;
+                greens[currentP3].setVisible(true);
+                throw new IOException();
             } else {
                 playerLabel.setText("Player 4 Turn");
                 return greens[currentP3];
@@ -391,7 +398,9 @@ public class gameBoardController implements Initializable {
                 JOptionPane.showMessageDialog(null,
                         "Congratulations to Player 4 for Winning!", "We have a Winner!",
                         JOptionPane.INFORMATION_MESSAGE);
-                        throw new IOException();
+                currentP4 = 31;
+                yellows[currentP4].setVisible(true);
+                throw new IOException();
             } else {
                 playerLabel.setText("Player 1 Turn");
                 return yellows[currentP4];
@@ -409,8 +418,7 @@ public class gameBoardController implements Initializable {
      */
     @FXML
     private void handleDieButtonAction(final ActionEvent event) {
-        int playerMove;
-        playerMove = (int)(Math.random() * 6) + 1;
+        int playerMove = 1; //(int)(Math.random() * 6) + 1;
         try {
             getImageView(playerMove).setVisible(true);
         } catch (IOException e) {
@@ -493,17 +501,33 @@ public class gameBoardController implements Initializable {
         double rngP3 = Math.random();
         double rngP4 = Math.random();
 
-        if (rngP1 < 0.25) {
+//        red43.setVisible(true);
+//        currentP1 = 28;
+//        blue43.setVisible(true);
+//        currentP2 = 28;
+//        green43.setVisible(true);
+//        currentP3 = 28;
+//        yellow43.setVisible(true);
+//        currentP4 = 28;
+//
+//        fear1.setText("P1 Fears: " + p1Fears);
+//        fear2.setText("P2 Fears: " + p2Fears);
+//        fear3.setText("P3 Fears: " + p3Fears);
+//        fear4.setText("P4 Fears: " + p4Fears);
+
+
+
+        if (rngP1 < 0.5) {
             red00.setVisible(true);
             p1Fears = 8;
             currentP1 = 0;
             fear1.setText("P1 Fears: " + p1Fears);
-        } else if (rngP1 < 0.5) {
+        } else if (rngP1 < 0.8) {
             red01.setVisible(true);
             currentP1 = 8;
             p1Fears = 6;
             fear1.setText("P1 Fears: " + p1Fears);
-        } else if (rngP1 < 0.75) {
+        } else if (rngP1 < 0.95) {
             red02.setVisible(true);
             currentP1 = 16;
             p1Fears = 4;
@@ -516,17 +540,17 @@ public class gameBoardController implements Initializable {
         }
 
 
-        if (rngP2 < 0.25) {
+        if (rngP2 < 0.5) {
             blue00.setVisible(true);
             p2Fears = 8;
             currentP2 = 0;
             fear2.setText("P2 Fears: " + p2Fears);
-        } else if (rngP2 < 0.5) {
+        } else if (rngP2 < 0.8) {
             blue01.setVisible(true);
             currentP2 = 8;
             p2Fears = 6;
             fear2.setText("P2 Fears: " + p2Fears);
-        } else if (rngP2 < 0.75) {
+        } else if (rngP2 < 0.95) {
             blue02.setVisible(true);
             p2Fears = 4;
             currentP2 = 16;
@@ -539,17 +563,17 @@ public class gameBoardController implements Initializable {
         }
 
 
-        if (rngP3 < 0.25) {
+        if (rngP3 < 0.5) {
             green00.setVisible(true);
             p3Fears = 8;
             currentP3 = 0;
             fear3.setText("P3 Fears: " + p3Fears);
-        } else if (rngP3 < 0.5) {
+        } else if (rngP3 < 0.8) {
             green01.setVisible(true);
             p3Fears = 6;
             currentP3 = 8;
             fear3.setText("P3 Fears: " + p3Fears);
-        } else if (rngP3 < 0.75) {
+        } else if (rngP3 < 0.95) {
             green02.setVisible(true);
             p3Fears = 4;
             currentP3 = 16;
@@ -562,17 +586,17 @@ public class gameBoardController implements Initializable {
         }
 
 
-        if (rngP4 < 0.25) {
+        if (rngP4 < 0.5) {
             yellow00.setVisible(true);
             p4Fears = 8;
             currentP4 = 0;
             fear4.setText("P4 Fears: " + p4Fears);
-        } else if (rngP4 < 0.5) {
+        } else if (rngP4 < 0.8) {
             yellow01.setVisible(true);
             p4Fears = 6;
             currentP4 = 8;
             fear4.setText("P4 Fears: " + p4Fears);
-        } else if (rngP4 < 0.75) {
+        } else if (rngP4 < 0.95) {
             yellow02.setVisible(true);
             p4Fears = 4;
             currentP4 = 16;

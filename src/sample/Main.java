@@ -221,7 +221,7 @@ public class Main extends Application {
                 personalQuestions.add(new ArrayList<String>());
                 personalQuestions.add(new ArrayList<String>());
 
-        personalQuestions.get(0).add("You are living along for the first time");
+                personalQuestions.get(0).add("You are living along for the first time");
                 personalQuestions.get(0).add("You are feeling overwhelmed and you would like someone to talk to");
                 personalQuestions.get(0).add("You find yourself bored in school");
                 personalQuestions.get(0).add("You have missed several classes that result in your grade dropping");

@@ -34,7 +34,7 @@ public class Main extends Application {
                 this.personalTiles = personalTiles;
                 int summerTiles[] = {7, 15, 23, 31};
                 this.summerTiles = summerTiles;
-                String[] names = {"Life Problems", "Academic Problems", "Personal Problems"};
+                String[] names = {"Life Problems", "Academic Problems", "Personal Problems", "Summer!"};
                 this.names = names;
                 ArrayList<ArrayList<String>> lifeQuestions = new ArrayList<ArrayList<String>>();
                 this.lifeQuestions = lifeQuestions;
@@ -328,7 +328,7 @@ public class Main extends Application {
         }
         for (int i : summerTiles ) {
             if (i == key) {
-                return names[2];
+                return names[3];
             }
         }
         return "New School Year";

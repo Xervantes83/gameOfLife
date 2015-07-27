@@ -71,15 +71,27 @@ public class questionScreenController implements Initializable {
         String lastPhrase = "";
         lastPhrase = temp.substring(temp.lastIndexOf("\n")+1);
         System.out.println(lastPhrase);
-        if (lastPhrase.substring(0,4).equals("Gain")) {
+        if (lastPhrase == "") {
             if (gameBoardController.p1Turn) {
-                gameBoardController.p1Fears ++;
+                gameBoardController.p1Fears-=2;
             } else if (gameBoardController.p2Turn) {
-                gameBoardController.p2Fears ++;
+                gameBoardController.p2Fears-=2;
             } else if (gameBoardController.p3Turn) {
-                gameBoardController.p3Fears ++;
+                gameBoardController.p3Fears-=2;
             } else if (gameBoardController.p4Turn) {
-                gameBoardController.p4Fears ++;
+                gameBoardController.p4Fears-=2;
+            } else {
+                return;
+            }
+        }else if (lastPhrase.substring(0,4).equals("Gain")) {
+            if (gameBoardController.p1Turn) {
+                gameBoardController.p1Fears++;
+            } else if (gameBoardController.p2Turn) {
+                gameBoardController.p2Fears++;
+            } else if (gameBoardController.p3Turn) {
+                gameBoardController.p3Fears++;
+            } else if (gameBoardController.p4Turn) {
+                gameBoardController.p4Fears++;
             } else {
                 return;
             }

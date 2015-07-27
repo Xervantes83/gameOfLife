@@ -4,6 +4,7 @@ package sample;
  * Created by Benjamin Cervantes on 7/24/2015.
  */
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -335,7 +336,7 @@ public class gameBoardController implements Initializable {
 /**
  * @return the imageView
  */
-    public final ImageView getImageView(int playerMove) {
+    public final ImageView getImageView(int playerMove) throws Exception {
         ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red43, red53, red63, red73};
         ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue43, blue53, blue63, blue73};
         ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green43, green53, green63, green73};
@@ -344,29 +345,57 @@ public class gameBoardController implements Initializable {
             oldP1 = currentP1;
             reds[oldP1].setVisible(false);
             currentP1 = currentP1 + playerMove;
-            playerLabel.setText("Player 2 Turn");
-            return reds[currentP1];
+            if (currentP1 >= 31) {
+                JOptionPane.showMessageDialog(null,
+                        "Congratulations to Player 1 for Winning!", "We have a Winner!",
+                        JOptionPane.INFORMATION_MESSAGE);
+                        throw new IOException();
+            } else {
+                playerLabel.setText("Player 2 Turn");
+                return reds[currentP1];
+            }
         }
         if (p2Turn) {
             oldP2 = currentP2;
             blues[oldP2].setVisible(false);
             currentP2 = currentP2 + playerMove;
-            playerLabel.setText("Player 3 Turn");
-            return blues[currentP2];
+            if (currentP1 >= 31) {
+                JOptionPane.showMessageDialog(null,
+                        "Congratulations to Player 2 for Winning!", "We have a Winner!",
+                        JOptionPane.INFORMATION_MESSAGE);
+                        throw new IOException();
+            } else {
+                playerLabel.setText("Player 3 Turn");
+                return blues[currentP2];
+            }
         }
         if (p3Turn) {
             oldP3 = currentP3;
             greens[oldP3].setVisible(false);
             currentP3 = currentP3 + playerMove;
-            playerLabel.setText("Player 4 Turn");
-            return greens[currentP3];
+            if (currentP1 >= 31) {
+                JOptionPane.showMessageDialog(null,
+                        "Congratulations to Player 3 for Winning!", "We have a Winner!",
+                        JOptionPane.INFORMATION_MESSAGE);
+                        throw new IOException();
+            } else {
+                playerLabel.setText("Player 4 Turn");
+                return greens[currentP3];
+            }
         }
         else{
             oldP4 = currentP4;
             yellows[oldP4].setVisible(false);
             currentP4 = currentP4 + playerMove;
-            playerLabel.setText("Player 1 Turn");
-            return yellows[currentP4];
+            if (currentP1 >= 31) {
+                JOptionPane.showMessageDialog(null,
+                        "Congratulations to Player 4 for Winning!", "We have a Winner!",
+                        JOptionPane.INFORMATION_MESSAGE);
+                        throw new IOException();
+            } else {
+                playerLabel.setText("Player 1 Turn");
+                return yellows[currentP4];
+            }
         }
     }
 
@@ -382,7 +411,16 @@ public class gameBoardController implements Initializable {
     private void handleDieButtonAction(final ActionEvent event) {
         int playerMove;
         playerMove = (int)(Math.random() * 6) + 1;
-        getImageView(playerMove).setVisible(true);
+        try {
+            getImageView(playerMove).setVisible(true);
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(null,
+                    "The Game has Ended!", "We have a Winner!",
+                    JOptionPane.INFORMATION_MESSAGE);
+                    return;
+        } catch (Exception e) {
+            System.out.println("Something Unexpected Happened!");
+        }
         JOptionPane.showMessageDialog(null,
                 "You have rolled a " + playerMove, "Player Movement",
                 JOptionPane.INFORMATION_MESSAGE);

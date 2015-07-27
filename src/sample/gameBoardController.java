@@ -418,7 +418,7 @@ public class gameBoardController implements Initializable {
      */
     @FXML
     private void handleDieButtonAction(final ActionEvent event) {
-        int playerMove = 1; //(int)(Math.random() * 6) + 1;
+        int playerMove = (int)(Math.random() * 6) + 1;
         try {
             getImageView(playerMove).setVisible(true);
         } catch (IOException e) {

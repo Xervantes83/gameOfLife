@@ -27,18 +27,19 @@ public class gameBoardController implements Initializable {
     static boolean p2Turn = false;
     static boolean p3Turn = false;
     static boolean p4Turn = false;
-    static int currentP1 = 0;
-    static int currentP2 = 0;
-    static int currentP3 = 0;
-    static int currentP4 = 0;
+
+    static int currentP1;
+    static int currentP2;
+    static int currentP3;
+    static int currentP4;
     int oldP1;
     int oldP2;
     int oldP3;
     int oldP4;
-    static int p1Fears = 5;
-    static int p2Fears = 5;
-    static int p3Fears = 5;
-    static int p4Fears = 5;
+    static int p1Fears;
+    static int p2Fears;
+    static int p3Fears;
+    static int p4Fears;
 
 
     /**
@@ -448,13 +449,102 @@ public class gameBoardController implements Initializable {
         fear2_ = fear2;
         fear3_ = fear3;
         fear4_ = fear4;
-        red00.setVisible(true);
-        fear1.setText("P1 Fears: " + p1Fears);
-        blue00.setVisible(true);
-        fear2.setText("P2 Fears: " + p2Fears);
-        green00.setVisible(true);
-        fear3.setText("P3 Fears: " + p3Fears);
-        yellow00.setVisible(true);
-        fear4.setText("P4 Fears: " + p4Fears);
+
+        double rngP1 = Math.random();
+        double rngP2 = Math.random();
+        double rngP3 = Math.random();
+        double rngP4 = Math.random();
+
+        if (rngP1 < 0.25) {
+            red00.setVisible(true);
+            p1Fears = 8;
+            currentP1 = 0;
+            fear1.setText("P1 Fears: " + p1Fears);
+        } else if (rngP1 < 0.5) {
+            red01.setVisible(true);
+            currentP1 = 8;
+            p1Fears = 6;
+            fear1.setText("P1 Fears: " + p1Fears);
+        } else if (rngP1 < 0.75) {
+            red02.setVisible(true);
+            currentP1 = 16;
+            p1Fears = 4;
+            fear1.setText("P1 Fears: " + p1Fears);
+        } else {
+            red03.setVisible(true);
+            currentP1 = 24;
+            p1Fears = 2;
+            fear1.setText("P1 Fears: " + p1Fears);
+        }
+
+
+        if (rngP2 < 0.25) {
+            blue00.setVisible(true);
+            p2Fears = 8;
+            currentP2 = 0;
+            fear2.setText("P2 Fears: " + p2Fears);
+        } else if (rngP2 < 0.5) {
+            blue01.setVisible(true);
+            currentP2 = 8;
+            p2Fears = 6;
+            fear2.setText("P2 Fears: " + p2Fears);
+        } else if (rngP2 < 0.75) {
+            blue02.setVisible(true);
+            p2Fears = 4;
+            currentP2 = 16;
+            fear2.setText("P2 Fears: " + p2Fears);
+        } else {
+            blue03.setVisible(true);
+            p2Fears = 2;
+            currentP2 = 24;
+            fear2.setText("P2 Fears: " + p2Fears);
+        }
+
+
+        if (rngP3 < 0.25) {
+            green00.setVisible(true);
+            p3Fears = 8;
+            currentP3 = 0;
+            fear3.setText("P3 Fears: " + p3Fears);
+        } else if (rngP3 < 0.5) {
+            green01.setVisible(true);
+            p3Fears = 6;
+            currentP3 = 8;
+            fear3.setText("P3 Fears: " + p3Fears);
+        } else if (rngP3 < 0.75) {
+            green02.setVisible(true);
+            p3Fears = 4;
+            currentP3 = 16;
+            fear3.setText("P3 Fears: " + p3Fears);
+        } else {
+            green03.setVisible(true);
+            p3Fears = 2;
+            currentP3 = 24;
+            fear3.setText("P3 Fears: " + p3Fears);
+        }
+
+
+        if (rngP4 < 0.25) {
+            yellow00.setVisible(true);
+            p4Fears = 8;
+            currentP4 = 0;
+            fear4.setText("P4 Fears: " + p4Fears);
+        } else if (rngP4 < 0.5) {
+            yellow01.setVisible(true);
+            p4Fears = 6;
+            currentP4 = 8;
+            fear4.setText("P4 Fears: " + p4Fears);
+        } else if (rngP4 < 0.75) {
+            yellow02.setVisible(true);
+            p4Fears = 4;
+            currentP4 = 16;
+            fear4.setText("P4 Fears: " + p4Fears);
+        } else {
+            yellow03.setVisible(true);
+            p4Fears = 2;
+            currentP4 = 24;
+            fear4.setText("P4 Fears: " + p4Fears);
+        }
+
     }
 }

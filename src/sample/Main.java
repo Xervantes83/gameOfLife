@@ -302,7 +302,6 @@ public class Main extends Application {
         questionScreen = new Scene(question);
         choiceScreen = new Scene(choice);
 
-
         PrimaryStage = stage;
         PrimaryStage.setTitle("The Game of Life");
         PrimaryStage.setScene(main);

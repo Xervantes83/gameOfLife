@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.control.*?>
@@ -8,12 +9,24 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.startScreenController">
    <children>
-      <Button fx:id="newGameButton" layoutX="255.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Play Game" />
-      <Button fx:id="ruleButton" layoutX="272.0" layoutY="258.0" mnemonicParsing="false" onAction="#handleRuleButtonAction" text="Rules" />
-      <Label fx:id="title" layoutX="151.0" layoutY="14.0" text="The Game of Life" textAlignment="CENTER">
-         <font>
-            <Font size="40.0" />
-         </font>
-      </Label>
+      <StackPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="title" text="The Game of Life" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="newGameButton" mnemonicParsing="false" onAction="#handleButtonAction" text="Play Game" StackPane.alignment="CENTER">
+               <StackPane.margin>
+                  <Insets right="100.0" />
+               </StackPane.margin>
+            </Button>
+            <Button fx:id="ruleButton" mnemonicParsing="false" onAction="#handleRuleButtonAction" text="Rules" StackPane.alignment="CENTER">
+               <StackPane.margin>
+                  <Insets left="100.0" />
+               </StackPane.margin>
+            </Button>
+         </children>
+      </StackPane>
    </children>
 </AnchorPane>

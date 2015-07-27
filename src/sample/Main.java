@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.util.ArrayList;
+import javafx.geometry.Rectangle2D;
+import javafx.stage.Screen;
 
 public class Main extends Application {
 
@@ -296,11 +298,12 @@ public class Main extends Application {
         Parent question = FXMLLoader.load(getClass().getResource("questionScreen.fxml"));
         Parent choice = FXMLLoader.load(getClass().getResource("choiceScreen.fxml"));
 
-        main = new Scene(root);
-        gameBoardScreen = new Scene(gameBoard);
-        ruleScreen = new Scene(rule);
-        questionScreen = new Scene(question);
-        choiceScreen = new Scene(choice);
+        Rectangle2D visualBounds = Screen.getPrimary().getVisualBounds();
+        main = new Scene(root, visualBounds.getWidth(), visualBounds.getHeight() - 30);
+        gameBoardScreen = new Scene(gameBoard, visualBounds.getWidth(), visualBounds.getHeight() - 30);
+        ruleScreen = new Scene(rule, visualBounds.getWidth(), visualBounds.getHeight() - 30);
+        questionScreen = new Scene(question, visualBounds.getWidth(), visualBounds.getHeight() - 30);
+        choiceScreen = new Scene(choice, visualBounds.getWidth(), visualBounds.getHeight() - 30);
 
         PrimaryStage = stage;
         PrimaryStage.setTitle("The Game of Life");

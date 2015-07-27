@@ -69,17 +69,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5049" max-vertical-offset="6324">
-              <caret line="306" column="36" selection-start-line="306" selection-start-column="36" selection-end-line="306" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.14079422" vertical-offset="5039" max-vertical-offset="6511">
+              <caret line="301" column="84" selection-start-line="301" selection-start-column="84" selection-end-line="301" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#25507#25508#0" expanded="true" />
-                <element signature="e#25561#25562#0" expanded="true" />
-                <element signature="e#25658#25659#0" expanded="true" />
-                <element signature="e#25707#25708#0" expanded="true" />
+                <element signature="e#25925#25926#0" expanded="true" />
+                <element signature="e#25979#25980#0" expanded="true" />
+                <element signature="e#26076#26077#0" expanded="true" />
+                <element signature="e#26125#26126#0" expanded="true" />
+                <element signature="e#26236#26237#0" expanded="true" />
+                <element signature="e#26279#26280#0" expanded="true" />
+                <element signature="e#26396#26397#0" expanded="true" />
+                <element signature="e#26449#26450#0" expanded="true" />
+                <element signature="e#26562#26563#0" expanded="true" />
+                <element signature="e#26613#26614#0" expanded="true" />
+                <element signature="e#26659#26660#0" expanded="true" />
+                <element signature="e#26687#26688#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gameBoardController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/gameBoardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="6970" max-vertical-offset="10506">
+              <caret line="423" column="33" selection-start-line="423" selection-start-column="33" selection-end-line="423" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +121,8 @@
       <file leaf-file-name="gameBoard.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/gameBoard.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.857142" vertical-offset="11806" max-vertical-offset="12478">
-              <caret line="723" column="25" selection-start-line="723" selection-start-column="25" selection-end-line="723" selection-end-column="25" />
+            <state vertical-scroll-proportion="-82.34286" vertical-offset="9664" max-vertical-offset="12733">
+              <caret line="738" column="25" selection-start-line="738" selection-start-column="25" selection-end-line="738" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -111,10 +131,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="questionScreen.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="questionScreen.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/questionScreen.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45857418" vertical-offset="34" max-vertical-offset="697">
+            <state vertical-scroll-proportion="-6.8" vertical-offset="34" max-vertical-offset="697">
               <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
               <folding />
             </state>
@@ -129,6 +149,19 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="476">
               <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ruleScreen.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/ruleScreen.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.914286" vertical-offset="212" max-vertical-offset="731">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,17 +196,17 @@
         <option value="$PROJECT_DIR$/src/sample/SpaceTrader.java" />
         <option value="$PROJECT_DIR$/src/sample/SwitchNames.java" />
         <option value="$PROJECT_DIR$/src/sample/ruleScreenController.java" />
-        <option value="$PROJECT_DIR$/src/sample/ruleScreen.fxml" />
         <option value="$PROJECT_DIR$/src/sample/startScreenController.java" />
         <option value="$PROJECT_DIR$/src/sample/QuestionLauncher.java" />
         <option value="$PROJECT_DIR$/src/sample/choiceScreenController.java" />
         <option value="$PROJECT_DIR$/src/sample/choiceScreen.fxml" />
         <option value="$PROJECT_DIR$/src/sample/questionScreenController.java" />
-        <option value="$PROJECT_DIR$/src/sample/gameBoardController.java" />
-        <option value="$PROJECT_DIR$/src/sample/gameBoard.fxml" />
         <option value="$PROJECT_DIR$/src/sample/startScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/questionScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/gameBoard.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/ruleScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/gameBoardController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
       </list>
     </option>
   </component>
@@ -591,12 +624,12 @@
       <workItem from="1437693487255" duration="1158000" />
       <workItem from="1437696863376" duration="36285000" />
       <workItem from="1437868380720" duration="378000" />
-      <workItem from="1438027633977" duration="4255000" />
+      <workItem from="1438027633977" duration="9346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59210000" />
+    <option name="totallyTimeSpent" value="64301000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -619,13 +652,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705098" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -761,10 +794,18 @@
           <caret line="291" column="0" selection-start-line="291" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -825,10 +866,18 @@
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -859,10 +908,18 @@
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -911,10 +968,18 @@
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -963,10 +1028,18 @@
           <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1015,10 +1088,18 @@
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1050,10 +1131,18 @@
           <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1085,10 +1174,18 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1120,10 +1217,18 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1133,16 +1238,6 @@
         <state vertical-scroll-proportion="0.6131907" vertical-offset="0" max-vertical-offset="0">
           <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ruleScreen.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71823204" vertical-offset="0" max-vertical-offset="0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/choiceScreenController.java">
@@ -1179,36 +1274,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/gameBoardController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/choiceScreen.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="528" column="25" selection-start-line="528" selection-start-column="18" selection-end-line="528" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/startScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="476">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/questionScreen.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5049" max-vertical-offset="6324">
-          <caret line="306" column="36" selection-start-line="306" selection-start-column="36" selection-end-line="306" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#25507#25508#0" expanded="true" />
-            <element signature="e#25561#25562#0" expanded="true" />
-            <element signature="e#25658#25659#0" expanded="true" />
-            <element signature="e#25707#25708#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-6.8" vertical-offset="34" max-vertical-offset="697">
+          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/gameBoard.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-82.34286" vertical-offset="9664" max-vertical-offset="12733">
+          <caret line="738" column="25" selection-start-line="738" selection-start-column="25" selection-end-line="738" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ruleScreen.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.914286" vertical-offset="212" max-vertical-offset="731">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/startScreen.fxml">
@@ -1222,37 +1329,44 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/choiceScreen.fxml">
+    <entry file="file://$PROJECT_DIR$/src/sample/startScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="476">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/gameBoard.fxml">
+    <entry file="file://$PROJECT_DIR$/src/sample/gameBoardController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.857142" vertical-offset="11806" max-vertical-offset="12478">
-          <caret line="723" column="25" selection-start-line="723" selection-start-column="25" selection-end-line="723" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="6970" max-vertical-offset="10506">
+          <caret line="423" column="33" selection-start-line="423" selection-start-column="33" selection-end-line="423" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/questionScreen.fxml">
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45857418" vertical-offset="34" max-vertical-offset="697">
-          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
-          <folding />
+        <state vertical-scroll-proportion="0.14079422" vertical-offset="5039" max-vertical-offset="6511">
+          <caret line="301" column="84" selection-start-line="301" selection-start-column="84" selection-end-line="301" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#25925#25926#0" expanded="true" />
+            <element signature="e#25979#25980#0" expanded="true" />
+            <element signature="e#26076#26077#0" expanded="true" />
+            <element signature="e#26125#26126#0" expanded="true" />
+            <element signature="e#26236#26237#0" expanded="true" />
+            <element signature="e#26279#26280#0" expanded="true" />
+            <element signature="e#26396#26397#0" expanded="true" />
+            <element signature="e#26449#26450#0" expanded="true" />
+            <element signature="e#26562#26563#0" expanded="true" />
+            <element signature="e#26613#26614#0" expanded="true" />
+            <element signature="e#26659#26660#0" expanded="true" />
+            <element signature="e#26687#26688#0" expanded="true" />
+          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
   </component>

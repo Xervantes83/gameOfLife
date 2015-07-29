@@ -56,37 +56,130 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <Label text="Start Freshman" textAlignment="CENTER" wrapText="true" />
-            <Label text="Start Junior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
-            <Label text="Start Sophmore" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
-            <Label text="Start Senior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3" />
-            <Label text="Personal" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label text="Academic" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label text="Life" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="Academic" GridPane.columnIndex="2" />
-            <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Label text="Personal" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label text="Academic" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Label text="Personal" GridPane.columnIndex="3" />
-            <Label text="Academic" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Label text="Life" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label text="Personal" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Label text="Life" GridPane.columnIndex="4" />
-            <Label text="Personal" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Label text="Academic" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Label text="Life" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Label text="Academic" GridPane.columnIndex="5" />
-            <Label text="Life" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Label text="Personal" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <Label text="Academic" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Label text="Personal" GridPane.columnIndex="6" />
-            <Label text="Academic" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <Label text="Life" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <Label text="Personal" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <Label text="Summer" GridPane.columnIndex="7" />
-            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Label text="Start Freshman" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Start Junior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" >
+            <font>
+               <Font size="18.0" />
+            </font></Label>
+            <Label text="Start Sophmore" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Start Senior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Personal" GridPane.columnIndex="1" GridPane.rowIndex="1" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Academic" GridPane.columnIndex="1" GridPane.rowIndex="2" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Life" GridPane.columnIndex="1" GridPane.rowIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Academic" GridPane.columnIndex="2" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="1" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Personal" GridPane.columnIndex="2" GridPane.rowIndex="2" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Academic" GridPane.columnIndex="2" GridPane.rowIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Personal" GridPane.columnIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Academic" GridPane.columnIndex="3" GridPane.rowIndex="1" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Life" GridPane.columnIndex="3" GridPane.rowIndex="2" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Personal" GridPane.columnIndex="3" GridPane.rowIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Life" GridPane.columnIndex="4" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Personal" GridPane.columnIndex="4" GridPane.rowIndex="1" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Academic" GridPane.columnIndex="4" GridPane.rowIndex="2" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Life" GridPane.columnIndex="4" GridPane.rowIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Academic" GridPane.columnIndex="5" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Life" GridPane.columnIndex="5" GridPane.rowIndex="1" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Personal" GridPane.columnIndex="5" GridPane.rowIndex="2" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Academic" GridPane.columnIndex="5" GridPane.rowIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Personal" GridPane.columnIndex="6" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Academic" GridPane.columnIndex="6" GridPane.rowIndex="1" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Life" GridPane.columnIndex="6" GridPane.rowIndex="2" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Personal" GridPane.columnIndex="6" GridPane.rowIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Summer" GridPane.columnIndex="7" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="1" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="2" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="3" >
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
             <Label text="Life" GridPane.columnIndex="1">
                <text>
                   <Label style="-fx-font-weight: bold; -fx-label-padding: 6 0 18 6;" text="Storage Overview Home" VBox.vgrow="NEVER">

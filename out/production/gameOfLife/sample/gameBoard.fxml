@@ -38,7 +38,7 @@
                   <Insets bottom="15.0" left="300.0" />
                </StackPane.margin></Label>
          </children></StackPane>
-      <GridPane alignment="CENTER_LEFT" gridLinesVisible="true" layoutY="76.0" prefHeight="267.0" prefWidth="600.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
+      <GridPane alignment="CENTER_LEFT" gridLinesVisible="true" layoutY="76.0" prefHeight="267.0" prefWidth="600.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
          <columnConstraints>
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -50,137 +50,140 @@
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
          </columnConstraints>
          <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="27.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
             <Label text="Start Freshman" textAlignment="CENTER" wrapText="true">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Start Junior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" >
+            <Label text="Start Junior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2">
             <font>
                <Font size="18.0" />
             </font></Label>
-            <Label text="Start Sophmore" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" >
+            <Label text="Start Sophmore" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Start Senior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3" >
+            <Label text="Start Senior" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Personal" GridPane.columnIndex="1" GridPane.rowIndex="1" >
+            <Label text="Personal" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Academic" GridPane.columnIndex="1" GridPane.rowIndex="2" >
+            <Label text="Academic" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Life" GridPane.columnIndex="1" GridPane.rowIndex="3" >
+            <Label text="Life" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Academic" GridPane.columnIndex="2" >
+            <Label text="Academic" GridPane.columnIndex="2">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="1" >
+            <Label text="Life" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Personal" GridPane.columnIndex="2" GridPane.rowIndex="2" >
+            <Label text="Personal" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Academic" GridPane.columnIndex="2" GridPane.rowIndex="3" >
+            <Label text="Academic" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Personal" GridPane.columnIndex="3" >
+            <Label text="Personal" GridPane.columnIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Academic" GridPane.columnIndex="3" GridPane.rowIndex="1" >
+            <Label text="Academic" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Life" GridPane.columnIndex="3" GridPane.rowIndex="2" >
+            <Label text="Life" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Personal" GridPane.columnIndex="3" GridPane.rowIndex="3" >
+            <Label text="Personal" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Life" GridPane.columnIndex="4" >
+            <Label text="Life" GridPane.columnIndex="4">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Personal" GridPane.columnIndex="4" GridPane.rowIndex="1" >
+            <Label text="Personal" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Academic" GridPane.columnIndex="4" GridPane.rowIndex="2" >
+            <Label text="Academic" GridPane.columnIndex="4" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Life" GridPane.columnIndex="4" GridPane.rowIndex="3" >
+            <Label text="Life" GridPane.columnIndex="4" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Academic" GridPane.columnIndex="5" >
+            <Label text="Academic" GridPane.columnIndex="5">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Life" GridPane.columnIndex="5" GridPane.rowIndex="1" >
+            <Label text="Life" GridPane.columnIndex="5" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Personal" GridPane.columnIndex="5" GridPane.rowIndex="2" >
+            <Label text="Personal" GridPane.columnIndex="5" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Academic" GridPane.columnIndex="5" GridPane.rowIndex="3" >
+            <Label text="Academic" GridPane.columnIndex="5" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Personal" GridPane.columnIndex="6" >
+            <Label text="Personal" GridPane.columnIndex="6">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Academic" GridPane.columnIndex="6" GridPane.rowIndex="1" >
+            <Label text="Academic" GridPane.columnIndex="6" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Life" GridPane.columnIndex="6" GridPane.rowIndex="2" >
+            <Label text="Life" GridPane.columnIndex="6" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Personal" GridPane.columnIndex="6" GridPane.rowIndex="3" >
+            <Label text="Personal" GridPane.columnIndex="6" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Summer" GridPane.columnIndex="7" >
+            <Label text="Summer" GridPane.columnIndex="7">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="1" >
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="2" >
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="2">
                <font>
                   <Font size="18.0" />
                </font></Label>
-            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="3" >
+            <Label text="Summer" GridPane.columnIndex="7" GridPane.rowIndex="3">
                <font>
                   <Font size="18.0" />
                </font></Label>
             <Label text="Life" GridPane.columnIndex="1">
+                <font>
+                    <Font size="18.0" />
+                </font>
                <text>
                   <Label style="-fx-font-weight: bold; -fx-label-padding: 6 0 18 6;" text="Storage Overview Home" VBox.vgrow="NEVER">
                      <text>
@@ -831,10 +834,23 @@
             </ImageView>
          </children>
       </GridPane>
-      <Button fx:id="dieButton" layoutX="14.0" layoutY="355.0" mnemonicParsing="false" onAction="#handleDieButtonAction" text="Roll Die" AnchorPane.bottomAnchor="14.0" />
-      <Label fx:id="playerLabel" layoutX="18.0" layoutY="26.0" prefHeight="21.0" prefWidth="107.0" text="Player 1 Turn">
+       <Label fx:id="RollDice" layoutX="14.0" layoutY="635.0" text="Roll Dice:">
+           <font>
+               <Font name="System Bold" size="18.0" />
+           </font>
+       </Label>
+      <Button fx:id="dieButton" layoutX="125.0" layoutY="610.0" prefHeight="75" prefWidth="75" onAction="#handleDieButtonAction">
+          <graphic>
+              <ImageView fx:id="dice" fitHeight="75" fitWidth="75">
+                 <image>
+                     <Image url="@dice2.jpg" />
+                 </image>
+              </ImageView>
+          </graphic>
+      </Button>
+      <Label fx:id="playerLabel" layoutX="200.0" layoutY="45.0" text="Player 1 Turn">
          <font>
-            <Font name="System Bold" size="15.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
    </children>

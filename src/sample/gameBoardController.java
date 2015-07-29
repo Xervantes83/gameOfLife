@@ -517,96 +517,75 @@ public class gameBoardController implements Initializable {
 
 
 
-        if (rngP1 < 0.5) {
+        if (rngP1 < 0.6) {
             red00.setVisible(true);
             p1Fears = 8;
             currentP1 = 0;
             fear1.setText("P1 Fears: " + p1Fears);
-        } else if (rngP1 < 0.8) {
+        } else if (rngP1 < 0.85) {
             red01.setVisible(true);
             currentP1 = 8;
             p1Fears = 6;
             fear1.setText("P1 Fears: " + p1Fears);
-        } else if (rngP1 < 0.95) {
+        } else {
             red02.setVisible(true);
             currentP1 = 16;
             p1Fears = 4;
             fear1.setText("P1 Fears: " + p1Fears);
-        } else {
-            red03.setVisible(true);
-            currentP1 = 24;
-            p1Fears = 2;
-            fear1.setText("P1 Fears: " + p1Fears);
         }
 
 
-        if (rngP2 < 0.5) {
+        if (rngP2 < 0.60) {
             blue00.setVisible(true);
             p2Fears = 8;
             currentP2 = 0;
             fear2.setText("P2 Fears: " + p2Fears);
-        } else if (rngP2 < 0.8) {
+        } else if (rngP2 < 0.85) {
             blue01.setVisible(true);
             currentP2 = 8;
             p2Fears = 6;
             fear2.setText("P2 Fears: " + p2Fears);
-        } else if (rngP2 < 0.95) {
+        } else {
             blue02.setVisible(true);
             p2Fears = 4;
             currentP2 = 16;
             fear2.setText("P2 Fears: " + p2Fears);
-        } else {
-            blue03.setVisible(true);
-            p2Fears = 2;
-            currentP2 = 24;
-            fear2.setText("P2 Fears: " + p2Fears);
         }
 
 
-        if (rngP3 < 0.5) {
+        if (rngP3 < 0.60) {
             green00.setVisible(true);
             p3Fears = 8;
             currentP3 = 0;
             fear3.setText("P3 Fears: " + p3Fears);
-        } else if (rngP3 < 0.8) {
+        } else if (rngP3 < 0.85) {
             green01.setVisible(true);
             p3Fears = 6;
             currentP3 = 8;
             fear3.setText("P3 Fears: " + p3Fears);
-        } else if (rngP3 < 0.95) {
+        } else {
             green02.setVisible(true);
             p3Fears = 4;
             currentP3 = 16;
             fear3.setText("P3 Fears: " + p3Fears);
-        } else {
-            green03.setVisible(true);
-            p3Fears = 2;
-            currentP3 = 24;
-            fear3.setText("P3 Fears: " + p3Fears);
         }
 
 
-        if (rngP4 < 0.5) {
+        if (rngP4 < 0.60) {
             yellow00.setVisible(true);
             p4Fears = 8;
             currentP4 = 0;
             fear4.setText("P4 Fears: " + p4Fears);
-        } else if (rngP4 < 0.8) {
+        } else if (rngP4 < 0.85) {
             yellow01.setVisible(true);
             p4Fears = 6;
             currentP4 = 8;
             fear4.setText("P4 Fears: " + p4Fears);
-        } else if (rngP4 < 0.95) {
+        } else {
             yellow02.setVisible(true);
             p4Fears = 4;
             currentP4 = 16;
             fear4.setText("P4 Fears: " + p4Fears);
-        } else {
-            yellow03.setVisible(true);
-            p4Fears = 2;
-            currentP4 = 24;
-            fear4.setText("P4 Fears: " + p4Fears);
         }
-
     }
 }

@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.startScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.startScreenController">
    <children>
-      <StackPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <Label fx:id="title" text="The Game of Life" textAlignment="CENTER" StackPane.alignment="TOP_CENTER">
-               <font>
-                  <Font size="40.0" />
-               </font>
-            </Label>
-            <Button fx:id="newGameButton" mnemonicParsing="false" onAction="#handleButtonAction" text="Play Game" StackPane.alignment="CENTER">
-               <StackPane.margin>
-                  <Insets right="100.0" />
-               </StackPane.margin>
-            </Button>
-            <Button fx:id="ruleButton" mnemonicParsing="false" onAction="#handleRuleButtonAction" text="Rules" StackPane.alignment="CENTER">
-               <StackPane.margin>
-                  <Insets left="100.0" />
-               </StackPane.margin>
-            </Button>
-         </children>
-      </StackPane>
+       <ImageView fx:id="logo" fitHeight="200" fitWidth="700" layoutX="350.0" layoutY="175.0">
+           <image>
+               <Image url="@logo.svg.png" />
+           </image>
+       </ImageView>
+       <Button fx:id="ruleButton" layoutX="500" layoutY="382.0" mnemonicParsing="false" onAction="#handleRuleButtonAction" prefHeight="43.0" prefWidth="119.0" text="Rules">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+       <Button fx:id="newGameButton" layoutX="715" layoutY="382.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="119.0" text="Play Game">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
    </children>
 </AnchorPane>

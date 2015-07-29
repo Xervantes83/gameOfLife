@@ -11,11 +11,16 @@
    <children>
       <StackPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="The Game of Life" StackPane.alignment="TOP_CENTER">
-               <font>
-                  <Font size="40.0" />
-               </font>
-            </Label>
+            <!--<Label text="The Game of Life" StackPane.alignment="TOP_CENTER">-->
+               <!--<font>-->
+                  <!--<Font size="40.0" />-->
+               <!--</font>-->
+            <!--</Label>-->
+            <ImageView fx:id="logo" StackPane.alignment="TOP_CENTER">
+               <image>
+                  <Image url="@logo.svg.png" />
+               </image>
+            </ImageView>
             <Label fx:id="fear1" prefHeight="21.0" prefWidth="89.0" text="P1 Fears: 0" StackPane.alignment="BOTTOM_CENTER">
                <StackPane.margin>
                   <Insets bottom="15.0" right="300.0" />

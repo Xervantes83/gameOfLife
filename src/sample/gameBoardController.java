@@ -56,261 +56,389 @@ public class gameBoardController implements Initializable {
      * @variable imageView to show player local
      */
     @FXML
-    private ImageView red00;
+    private ImageView red00_;
+    public static ImageView red00;
     @FXML
-    private ImageView blue00;
+    private ImageView blue00_;
+    public static ImageView blue00;
     @FXML
-    private ImageView green00;
+    private ImageView green00_;
+    public static ImageView green00;
     @FXML
-    private ImageView yellow00;
+    private ImageView yellow00_;
+    public static ImageView yellow00;
     @FXML
-    private ImageView red10;
+    private ImageView red10_;
+    public static ImageView red10;
     @FXML
-    private ImageView blue10;
+    private ImageView blue10_;
+    public static ImageView blue10;
     @FXML
-    private ImageView green10;
+    private ImageView green10_;
+    public static ImageView green10;
     @FXML
-    private ImageView yellow10;
+    private ImageView yellow10_;
+    public static ImageView yellow10;
     @FXML
-    private ImageView red20;
+    private ImageView red20_;
+    public static ImageView red20;
     @FXML
-    private ImageView blue20;
+    private ImageView blue20_;
+    public static ImageView blue20;
     @FXML
-    private ImageView green20;
+    private ImageView green20_;
+    public static ImageView green20;
     @FXML
-    private ImageView yellow20;
+    private ImageView yellow20_;
+    public static ImageView yellow20;
     @FXML
-    private ImageView red30;
+    private ImageView red30_;
+    public static ImageView red30;
     @FXML
-    private ImageView blue30;
+    private ImageView blue30_;
+    public static ImageView blue30;
     @FXML
-    private ImageView green30;
+    private ImageView green30_;
+    public static ImageView green30;
     @FXML
-    private ImageView yellow30;
+    private ImageView yellow30_;
+    public static ImageView yellow30;
     @FXML
-    private ImageView red40;
+    private ImageView red40_;
+    public static ImageView red40;
     @FXML
-    private ImageView blue40;
+    private ImageView blue40_;
+    public static ImageView blue40;
     @FXML
-    private ImageView green40;
+    private ImageView green40_;
+    public static ImageView green40;
     @FXML
-    private ImageView yellow40;
+    private ImageView yellow40_;
+    public static ImageView yellow40;
     @FXML
-    private ImageView red50;
+    private ImageView red50_;
+    public static ImageView red50;
     @FXML
-    private ImageView blue50;
+    private ImageView blue50_;
+    public static ImageView blue50;
     @FXML
-    private ImageView green50;
+    private ImageView green50_;
+    public static ImageView green50;
     @FXML
-    private ImageView yellow50;
+    private ImageView yellow50_;
+    public static ImageView yellow50;
     @FXML
-    private ImageView red60;
+    private ImageView red60_;
+    public static ImageView red60;
     @FXML
-    private ImageView blue60;
+    private ImageView blue60_;
+    public static ImageView blue60;
     @FXML
-    private ImageView green60;
+    private ImageView green60_;
+    public static ImageView green60;
     @FXML
-    private ImageView yellow60;
+    private ImageView yellow60_;
+    public static ImageView yellow60;
     @FXML
-    private ImageView red70;
+    private ImageView red70_;
+    public static ImageView red70;
     @FXML
-    private ImageView blue70;
+    private ImageView blue70_;
+    public static ImageView blue70;
     @FXML
-    private ImageView green70;
+    private ImageView green70_;
+    public static ImageView green70;
     @FXML
-    private ImageView yellow70;
+    private ImageView yellow70_;
+    public static ImageView yellow70;
     @FXML
-    private ImageView red01;
+    private ImageView red01_;
+    public static ImageView red01;
     @FXML
-    private ImageView blue01;
+    private ImageView blue01_;
+    public static ImageView blue01;
     @FXML
-    private ImageView green01;
+    private ImageView green01_;
+    public static ImageView green01;
     @FXML
-    private ImageView yellow01;
+    private ImageView yellow01_;
+    public static ImageView yellow01;
     @FXML
-    private ImageView red11;
+    private ImageView red11_;
+    public static ImageView red11;
     @FXML
-    private ImageView blue11;
+    private ImageView blue11_;
+    public static ImageView blue11;
     @FXML
-    private ImageView green11;
+    private ImageView green11_;
+    public static ImageView green11;
     @FXML
-    private ImageView yellow11;
+    private ImageView yellow11_;
+    public static ImageView yellow11;
     @FXML
-    private ImageView red21;
+    private ImageView red21_;
+    public static ImageView red21;
     @FXML
-    private ImageView blue21;
+    private ImageView blue21_;
+    public static ImageView blue21;
     @FXML
-    private ImageView green21;
+    private ImageView green21_;
+    public static ImageView green21;
     @FXML
-    private ImageView yellow21;
+    private ImageView yellow21_;
+    public static ImageView yellow21;
     @FXML
-    private ImageView red31;
+    private ImageView red31_;
+    public static ImageView red31;
     @FXML
-    private ImageView blue31;
+    private ImageView blue31_;
+    public static ImageView blue31;
     @FXML
-    private ImageView green31;
+    private ImageView green31_;
+    public static ImageView green31;
     @FXML
-    private ImageView yellow31;
+    private ImageView yellow31_;
+    public static ImageView yellow31;
     @FXML
-    private ImageView red41;
+    private ImageView red41_;
+    public static ImageView red41;
     @FXML
-    private ImageView blue41;
+    private ImageView blue41_;
+    public static ImageView blue41;
     @FXML
-    private ImageView green41;
+    private ImageView green41_;
+    public static ImageView green41;
     @FXML
-    private ImageView yellow41;
+    private ImageView yellow41_;
+    public static ImageView yellow41;
     @FXML
-    private ImageView red51;
+    private ImageView red51_;
+    public static ImageView red51;
     @FXML
-    private ImageView blue51;
+    private ImageView blue51_;
+    public static ImageView blue51;
     @FXML
-    private ImageView green51;
+    private ImageView green51_;
+    public static ImageView green51;
     @FXML
-    private ImageView yellow51;
+    private ImageView yellow51_;
+    public static ImageView yellow51;
     @FXML
-    private ImageView red61;
+    private ImageView red61_;
+    public static ImageView red61;
     @FXML
-    private ImageView blue61;
+    private ImageView blue61_;
+    public static ImageView blue61;
     @FXML
-    private ImageView green61;
+    private ImageView green61_;
+    public static ImageView green61;
     @FXML
-    private ImageView yellow61;
+    private ImageView yellow61_;
+    public static ImageView yellow61;
     @FXML
-    private ImageView red71;
+    private ImageView red71_;
+    public static ImageView red71;
     @FXML
-    private ImageView blue71;
+    private ImageView blue71_;
+    public static ImageView blue71;
     @FXML
-    private ImageView green71;
+    private ImageView green71_;
+    public static ImageView green71;
     @FXML
-    private ImageView yellow71;
+    private ImageView yellow71_;
+    public static ImageView yellow71;
     @FXML
-    private ImageView red02;
+    private ImageView red02_;
+    public static ImageView red02;
     @FXML
-    private ImageView blue02;
+    private ImageView blue02_;
+    public static ImageView blue02;
     @FXML
-    private ImageView green02;
+    private ImageView green02_;
+    public static ImageView green02;
     @FXML
-    private ImageView yellow02;
+    private ImageView yellow02_;
+    public static ImageView yellow02;
     @FXML
-    private ImageView red12;
+    private ImageView red12_;
+    public static ImageView red12;
     @FXML
-    private ImageView blue12;
+    private ImageView blue12_;
+    public static ImageView blue12;
     @FXML
-    private ImageView green12;
+    private ImageView green12_;
+    public static ImageView green12;
     @FXML
-    private ImageView yellow12;
+    private ImageView yellow12_;
+    public static ImageView yellow12;
     @FXML
-    private ImageView red22;
+    private ImageView red22_;
+    public static ImageView red22;
     @FXML
-    private ImageView blue22;
+    private ImageView blue22_;
+    public static ImageView blue22;
     @FXML
-    private ImageView green22;
+    private ImageView green22_;
+    public static ImageView green22;
     @FXML
-    private ImageView yellow22;
+    private ImageView yellow22_;
+    public static ImageView yellow22;
     @FXML
-    private ImageView red32;
+    private ImageView red32_;
+    public static ImageView red32;
     @FXML
-    private ImageView blue32;
+    private ImageView blue32_;
+    public static ImageView blue32;
     @FXML
-    private ImageView green32;
+    private ImageView green32_;
+    public static ImageView green32;
     @FXML
-    private ImageView yellow32;
+    private ImageView yellow32_;
+    public static ImageView yellow32;
     @FXML
-    private ImageView red42;
+    private ImageView red42_;
+    public static ImageView red42;
     @FXML
-    private ImageView blue42;
+    private ImageView blue42_;
+    public static ImageView blue42;
     @FXML
-    private ImageView green42;
+    private ImageView green42_;
+    public static ImageView green42;
     @FXML
-    private ImageView yellow42;
+    private ImageView yellow42_;
+    public static ImageView yellow42;
     @FXML
-    private ImageView red52;
+    private ImageView red52_;
+    public static ImageView red52;
     @FXML
-    private ImageView blue52;
+    private ImageView blue52_;
+    public static ImageView blue52;
     @FXML
-    private ImageView green52;
+    private ImageView green52_;
+    public static ImageView green52;
     @FXML
-    private ImageView yellow52;
+    private ImageView yellow52_;
+    public static ImageView yellow52;
     @FXML
-    private ImageView red62;
+    private ImageView red62_;
+    public static ImageView red62;
     @FXML
-    private ImageView blue62;
+    private ImageView blue62_;
+    public static ImageView blue62;
     @FXML
-    private ImageView green62;
+    private ImageView green62_;
+    public static ImageView green62;
     @FXML
-    private ImageView yellow62;
+    private ImageView yellow62_;
+    public static ImageView yellow62;
     @FXML
-    private ImageView red72;
+    private ImageView red72_;
+    public static ImageView red72;
     @FXML
-    private ImageView blue72;
+    private ImageView blue72_;
+    public static ImageView blue72;
     @FXML
-    private ImageView green72;
+    private ImageView green72_;
+    public static ImageView green72;
     @FXML
-    private ImageView yellow72;
+    private ImageView yellow72_;
+    public static ImageView yellow72;
     @FXML
-    private ImageView red03;
+    private ImageView red03_;
+    public static ImageView red03;
     @FXML
-    private ImageView blue03;
+    private ImageView blue03_;
+    public static ImageView blue03;
     @FXML
-    private ImageView green03;
+    private ImageView green03_;
+    public static ImageView green03;
     @FXML
-    private ImageView yellow03;
+    private ImageView yellow03_;
+    public static ImageView yellow03;
     @FXML
-    private ImageView red13;
+    private ImageView red13_;
+    public static ImageView red13;
     @FXML
-    private ImageView blue13;
+    private ImageView blue13_;
+    public static ImageView blue13;
     @FXML
-    private ImageView green13;
+    private ImageView green13_;
+    public static ImageView green13;
     @FXML
-    private ImageView yellow13;
+    private ImageView yellow13_;
+    public static ImageView yellow13;
     @FXML
-    private ImageView red23;
+    private ImageView red23_;
+    public static ImageView red23;
     @FXML
-    private ImageView blue23;
+    private ImageView blue23_;
+    public static ImageView blue23;
     @FXML
-    private ImageView green23;
+    private ImageView green23_;
+    public static ImageView green23;
     @FXML
-    private ImageView yellow23;
+    private ImageView yellow23_;
+    public static ImageView yellow23;
     @FXML
-    private ImageView red33;
+    private ImageView red33_;
+    public static ImageView red33;
     @FXML
-    private ImageView blue33;
+    private ImageView blue33_;
+    public static ImageView blue33;
     @FXML
-    private ImageView green33;
+    private ImageView green33_;
+    public static ImageView green33;
     @FXML
-    private ImageView yellow33;
+    private ImageView yellow33_;
+    public static ImageView yellow33;
     @FXML
-    private ImageView red43;
+    private ImageView red43_;
+    public static ImageView red43;
     @FXML
-    private ImageView blue43;
+    private ImageView blue43_;
+    public static ImageView blue43;
     @FXML
-    private ImageView green43;
+    private ImageView green43_;
+    public static ImageView green43;
     @FXML
-    private ImageView yellow43;
+    private ImageView yellow43_;
+    public static ImageView yellow43;
     @FXML
-    private ImageView red53;
+    private ImageView red53_;
+    public static ImageView red53;
     @FXML
-    private ImageView blue53;
+    private ImageView blue53_;
+    public static ImageView blue53;
     @FXML
-    private ImageView green53;
+    private ImageView green53_;
+    public static ImageView green53;
     @FXML
-    private ImageView yellow53;
+    private ImageView yellow53_;
+    public static ImageView yellow53;
     @FXML
-    private ImageView red63;
+    private ImageView red63_;
+    public static ImageView red63;
     @FXML
-    private ImageView blue63;
+    private ImageView blue63_;
+    public static ImageView blue63;
     @FXML
-    private ImageView green63;
+    private ImageView green63_;
+    public static ImageView green63;
     @FXML
-    private ImageView yellow63;
+    private ImageView yellow63_;
+    public static ImageView yellow63;
     @FXML
-    private ImageView red73;
+    private ImageView red73_;
+    public static ImageView red73;
     @FXML
-    private ImageView blue73;
+    private ImageView blue73_;
+    public static ImageView blue73;
     @FXML
-    private ImageView green73;
+    private ImageView green73_;
+    public static ImageView green73;
     @FXML
-    private ImageView yellow73;
+    private ImageView yellow73_;
+    public static ImageView yellow73;
 
     @FXML
     private Label fear1_;
@@ -516,7 +644,6 @@ public class gameBoardController implements Initializable {
 //        fear4.setText("P4 Fears: " + p4Fears);
 
 
-
         if (rngP1 < 0.6) {
             red00.setVisible(true);
             p1Fears = 8;
@@ -588,4 +715,98 @@ public class gameBoardController implements Initializable {
             fear4.setText("P4 Fears: " + p4Fears);
         }
     }
+
+    @FXML
+    private void handleReset(final ActionEvent event) {
+
+        ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red33, red43, red53, red63, red73};
+        ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue33, blue43, blue53, blue63, blue73};
+        ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green33, green43, green53, green63, green73};
+        ImageView[] yellows = {yellow00, yellow10, yellow20, yellow30, yellow40, yellow50, yellow60, yellow70, yellow01, yellow11, yellow21, yellow31, yellow41, yellow51, yellow61, yellow71, yellow02, yellow12, yellow22, yellow32, yellow42, yellow52, yellow62, yellow72, yellow03, yellow13, yellow23, yellow33, yellow43, yellow53, yellow63, yellow73};
+
+        for ( int i = 0; i < 32; i++ ) {
+            reds[i].setVisible(false);
+            blues[i].setVisible(false);
+            greens[i].setVisible(false);
+            yellows[i].setVisible(false);
+        }
+
+        double rngP1 = Math.random();
+        double rngP2 = Math.random();
+        double rngP3 = Math.random();
+        double rngP4 = Math.random();
+
+        if (rngP1 < 0.6) {
+            red00.setVisible(true);
+            p1Fears = 8;
+            currentP1 = 0;
+            fear1.setText("P1 Fears: " + p1Fears);
+        } else if (rngP1 < 0.85) {
+            red01.setVisible(true);
+            currentP1 = 8;
+            p1Fears = 6;
+            fear1.setText("P1 Fears: " + p1Fears);
+        } else {
+            red02.setVisible(true);
+            currentP1 = 16;
+            p1Fears = 4;
+            fear1.setText("P1 Fears: " + p1Fears);
+        }
+
+
+        if (rngP2 < 0.60) {
+            blue00.setVisible(true);
+            p2Fears = 8;
+            currentP2 = 0;
+            fear2.setText("P2 Fears: " + p2Fears);
+        } else if (rngP2 < 0.85) {
+            blue01.setVisible(true);
+            currentP2 = 8;
+            p2Fears = 6;
+            fear2.setText("P2 Fears: " + p2Fears);
+        } else {
+            blue02.setVisible(true);
+            p2Fears = 4;
+            currentP2 = 16;
+            fear2.setText("P2 Fears: " + p2Fears);
+        }
+
+
+        if (rngP3 < 0.60) {
+            green00.setVisible(true);
+            p3Fears = 8;
+            currentP3 = 0;
+            fear3.setText("P3 Fears: " + p3Fears);
+        } else if (rngP3 < 0.85) {
+            green01.setVisible(true);
+            p3Fears = 6;
+            currentP3 = 8;
+            fear3.setText("P3 Fears: " + p3Fears);
+        } else {
+            green02.setVisible(true);
+            p3Fears = 4;
+            currentP3 = 16;
+            fear3.setText("P3 Fears: " + p3Fears);
+        }
+
+
+        if (rngP4 < 0.60) {
+            yellow00.setVisible(true);
+            p4Fears = 8;
+            currentP4 = 0;
+            fear4.setText("P4 Fears: " + p4Fears);
+        } else if (rngP4 < 0.85) {
+            yellow01.setVisible(true);
+            p4Fears = 6;
+            currentP4 = 8;
+            fear4.setText("P4 Fears: " + p4Fears);
+        } else {
+            yellow02.setVisible(true);
+            p4Fears = 4;
+            currentP4 = 16;
+            fear4.setText("P4 Fears: " + p4Fears);
+        }
+        Main.setBoardScene();
+    }
 }
+

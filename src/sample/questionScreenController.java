@@ -1,13 +1,19 @@
 package sample;
 
+import com.sun.org.apache.xpath.internal.operations.And;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Screen;
 
+import javafx.geometry.Rectangle2D;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Stack;
 
 /**
  * Created by Benjamin Cervantes on 7/24/2015.
@@ -202,6 +208,11 @@ public class questionScreenController implements Initializable {
         Main.setChoiceScreenScene();
     }
 
+    @FXML
+    private AnchorPane aPane;
+
+    @FXML
+    private StackPane sPane;
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -211,5 +222,12 @@ public class questionScreenController implements Initializable {
     public void initialize(final URL url, final ResourceBundle rb) {
         titleLabel_ = titleLabel;
         questionLabel_ = questionLabel;
+
+        Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
+        aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY()*1/5);
+        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY()*1/5);
+
+        titleLabel_.setLayoutX(primaryScreenBounds.getMaxY()/3);
+        questionLabel_.setLayoutX(0);
     }
 }

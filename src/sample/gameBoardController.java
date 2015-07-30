@@ -574,6 +574,7 @@ public class gameBoardController implements Initializable {
         }
 
         questionScreenController.questionLabel.setText(temp);
+        questionScreenController.questionLabel.setLayoutX(500);
         Main.setQuestionScreenScene();
     }
 

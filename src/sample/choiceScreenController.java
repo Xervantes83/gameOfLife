@@ -3,8 +3,12 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Screen;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -38,6 +42,12 @@ public class choiceScreenController implements Initializable {
         Main.setBoardScene();
     }
 
+    @FXML
+    private AnchorPane aPane;
+
+    @FXML
+    private StackPane sPane;
+
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -45,6 +55,10 @@ public class choiceScreenController implements Initializable {
      */
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
+        Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
+        aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY()*1/5);
+        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY()*1/5);
+
         choiceLabel_ = choiceLabel;
     }
 }

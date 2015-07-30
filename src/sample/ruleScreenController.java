@@ -9,8 +9,12 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Screen;
 
 public class ruleScreenController implements Initializable {
 
@@ -30,6 +34,12 @@ public class ruleScreenController implements Initializable {
         Main.setStartScreenScene();
     }
 
+    @FXML
+    private AnchorPane aPane;
+
+    @FXML
+    private StackPane sPane;
+
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -37,6 +47,10 @@ public class ruleScreenController implements Initializable {
      */
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
-        // TODO
+        Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
+        aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY()*1/9);
+        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY()*1/9);
+        aPane.setLeftAnchor(sPane, primaryScreenBounds.getMaxX()/5);
+        aPane.setRightAnchor(sPane, primaryScreenBounds.getMaxX()/5);
     }
 }

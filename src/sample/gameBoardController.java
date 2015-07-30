@@ -465,10 +465,6 @@ public class gameBoardController implements Initializable {
  * @return the imageView
  */
     public final ImageView getImageView(int playerMove) throws Exception {
-        ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red33, red43, red53, red63, red73};
-        ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue33, blue43, blue53, blue63, blue73};
-        ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green33, green43, green53, green63, green73};
-        ImageView[] yellows = {yellow00, yellow10, yellow20, yellow30, yellow40, yellow50, yellow60, yellow70, yellow01, yellow11, yellow21, yellow31, yellow41, yellow51, yellow61, yellow71, yellow02, yellow12, yellow22, yellow32, yellow42, yellow52, yellow62, yellow72, yellow03, yellow13, yellow23, yellow33, yellow43, yellow53, yellow63, yellow73};
         if (p1Turn) {
             System.out.println(reds.length + " - " + blues.length + " - " + greens.length + " - " + yellows.length);
             oldP1 = currentP1;
@@ -553,14 +549,13 @@ public class gameBoardController implements Initializable {
             JOptionPane.showMessageDialog(null,
                     "The Game has Ended!", "We have a Winner!",
                     JOptionPane.INFORMATION_MESSAGE);
-                    return;
+            return;
         } catch (Exception e) {
             System.out.println("Something Unexpected Happened!");
         }
         JOptionPane.showMessageDialog(null,
                 "You have rolled a " + playerMove, "Player Movement",
                 JOptionPane.INFORMATION_MESSAGE);
-        System.out.println(currentP1 + " - " + currentP2 + " - " + currentP3 + " - " + currentP4);
         String tempName = Main.getQuestionTitle(getPlayerLocation());
         questionScreenController.titleLabel.setText(tempName);
 
@@ -578,19 +573,62 @@ public class gameBoardController implements Initializable {
         Main.setQuestionScreenScene();
     }
 
+    private boolean p1InGame_;
+    private boolean p2InGame_;
+    private boolean p3InGame_;
+    private boolean p4InGame_;
+
+    public static boolean p1InGame;
+    public static boolean p2InGame;
+    public static boolean p3InGame;
+    public static boolean p4InGame;
+
+
     public static void switchTurns() {
         if (p1Turn) {
             p1Turn = false;
-            p2Turn = true;
+            if (p2InGame) {
+                p2Turn = true;
+            } else if (p3InGame) {
+                p3Turn = true;
+            } else if (p4InGame) {
+                p4Turn = true;
+            } else {
+                p1Turn = true;
+            }
         } else if (p2Turn) {
             p2Turn = false;
-            p3Turn = true;
+            if (p3InGame) {
+                p3Turn = true;
+            } else if (p4InGame) {
+                p4Turn = true;
+            } else if (p1InGame) {
+                p1Turn = true;
+            } else {
+                p2Turn = true;
+            }
         } else if (p3Turn) {
             p3Turn = false;
-            p4Turn = true;
+            if (p4InGame) {
+                p4Turn = true;
+            } else if (p1InGame) {
+                p1Turn = true;
+            } else if (p2InGame) {
+                p2Turn = true;
+            } else {
+                p3Turn = true;
+            }
         } else if (p4Turn) {
             p4Turn = false;
-            p1Turn = true;
+            if (p1InGame) {
+                p1Turn = true;
+            } else if (p2InGame) {
+                p2Turn = true;
+            } else if (p3InGame) {
+                p3Turn = true;
+            } else {
+                p4Turn = true;
+            }
         } else {
             return;
         }
@@ -613,6 +651,20 @@ public class gameBoardController implements Initializable {
         }
     }
 
+
+
+    private ImageView[] reds_;
+    public static ImageView[] reds;
+
+    private ImageView[] blues_;
+    public static ImageView[] blues;
+
+    private ImageView[] greens_;
+    public static ImageView[] greens;
+
+    private ImageView[] yellows_;
+    public static ImageView[] yellows;
+
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -620,30 +672,35 @@ public class gameBoardController implements Initializable {
      */
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
+        ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red33, red43, red53, red63, red73};
+        ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue33, blue43, blue53, blue63, blue73};
+        ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green33, green43, green53, green63, green73};
+        ImageView[] yellows = {yellow00, yellow10, yellow20, yellow30, yellow40, yellow50, yellow60, yellow70, yellow01, yellow11, yellow21, yellow31, yellow41, yellow51, yellow61, yellow71, yellow02, yellow12, yellow22, yellow32, yellow42, yellow52, yellow62, yellow72, yellow03, yellow13, yellow23, yellow33, yellow43, yellow53, yellow63, yellow73};
+
+        this.reds = reds;
+        this.blues = blues;
+        this.greens = greens;
+        this.yellows = yellows;
+
         fear1_ = fear1;
         fear2_ = fear2;
         fear3_ = fear3;
         fear4_ = fear4;
 
+        p1InGame = true;
+        p2InGame = true;
+        p3InGame = true;
+        p4InGame = true;
+
+        p1InGame_ = p1InGame;
+        p2InGame_ = p2InGame;
+        p3InGame_ = p3InGame;
+        p4InGame_ = p4InGame;
+
         double rngP1 = Math.random();
         double rngP2 = Math.random();
         double rngP3 = Math.random();
         double rngP4 = Math.random();
-
-//        red43.setVisible(true);
-//        currentP1 = 28;
-//        blue43.setVisible(true);
-//        currentP2 = 28;
-//        green43.setVisible(true);
-//        currentP3 = 28;
-//        yellow43.setVisible(true);
-//        currentP4 = 28;
-//
-//        fear1.setText("P1 Fears: " + p1Fears);
-//        fear2.setText("P2 Fears: " + p2Fears);
-//        fear3.setText("P3 Fears: " + p3Fears);
-//        fear4.setText("P4 Fears: " + p4Fears);
-
 
         if (rngP1 < 0.6) {
             red00.setVisible(true);
@@ -720,17 +777,17 @@ public class gameBoardController implements Initializable {
     @FXML
     private void handleReset(final ActionEvent event) {
 
-        ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red33, red43, red53, red63, red73};
-        ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue33, blue43, blue53, blue63, blue73};
-        ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green33, green43, green53, green63, green73};
-        ImageView[] yellows = {yellow00, yellow10, yellow20, yellow30, yellow40, yellow50, yellow60, yellow70, yellow01, yellow11, yellow21, yellow31, yellow41, yellow51, yellow61, yellow71, yellow02, yellow12, yellow22, yellow32, yellow42, yellow52, yellow62, yellow72, yellow03, yellow13, yellow23, yellow33, yellow43, yellow53, yellow63, yellow73};
-
         for ( int i = 0; i < 32; i++ ) {
             reds[i].setVisible(false);
             blues[i].setVisible(false);
             greens[i].setVisible(false);
             yellows[i].setVisible(false);
         }
+
+        p1InGame = true;
+        p2InGame = true;
+        p3InGame = true;
+        p4InGame = true;
 
         double rngP1 = Math.random();
         double rngP2 = Math.random();

@@ -9,8 +9,11 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Screen;
+import javafx.scene.image.ImageView;
 
 import javafx.geometry.Rectangle2D;
+
+import javax.swing.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Stack;
@@ -97,15 +100,51 @@ public class questionScreenController implements Initializable {
             } else {
                 return;
             }
-        }else if (lastPhrase.substring(0,4).equals("Gain")) {
+        } else if (lastPhrase.substring(0,4).equals("Gain")) {
             if (gameBoardController.p1Turn) {
                 gameBoardController.p1Fears++;
+                if (gameBoardController.p1Fears > 12) {
+                    gameBoardController.p1InGame = false;
+                    for (ImageView image : gameBoardController.reds) {
+                        image.setVisible(true);
+                    }
+                    JOptionPane.showMessageDialog(null,
+                            "Eliminated", "P1 Has Been Eliminated due to Fear!",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
             } else if (gameBoardController.p2Turn) {
                 gameBoardController.p2Fears++;
+                if (gameBoardController.p2Fears > 12) {
+                    gameBoardController.p2InGame = false;
+                    for (ImageView image : gameBoardController.blues) {
+                        image.setVisible(true);
+                    }
+                    JOptionPane.showMessageDialog(null,
+                            "Eliminated", "P2 Has Been Eliminated due to Fear!",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
             } else if (gameBoardController.p3Turn) {
                 gameBoardController.p3Fears++;
+                if (gameBoardController.p3Fears > 12) {
+                    gameBoardController.p3InGame = false;
+                    for (ImageView image : gameBoardController.greens) {
+                        image.setVisible(true);
+                    }
+                    JOptionPane.showMessageDialog(null,
+                            "Eliminated", "P3 Has Been Eliminated due to Fear!",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
             } else if (gameBoardController.p4Turn) {
                 gameBoardController.p4Fears++;
+                if (gameBoardController.p3Fears > 12) {
+                    gameBoardController.p3InGame = false;
+                    for (ImageView image : gameBoardController.yellows) {
+                        image.setVisible(true);
+                    }
+                    JOptionPane.showMessageDialog(null,
+                            "Eliminated", "P4 Has Been Eliminated due to Fear!",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
             } else {
                 return;
             }
@@ -129,6 +168,8 @@ public class questionScreenController implements Initializable {
         gameBoardController.fear4.setText("P4 Fears: " + gameBoardController.p4Fears);
 
         gameBoardController.switchTurns();
+        String newLine = System.getProperty("line.separator");
+        temp = temp.replaceAll("\\*", newLine);
         choiceScreenController.choiceLabel.setText(temp);
         Main.setChoiceScreenScene();
     }
@@ -175,26 +216,60 @@ public class questionScreenController implements Initializable {
         }else if (lastPhrase.substring(0,4).equals("Gain")) {
             if (gameBoardController.p1Turn) {
                 gameBoardController.p1Fears++;
+                if (gameBoardController.p1Fears > 12) {
+                    gameBoardController.p1InGame = false;
+                    for (ImageView image : gameBoardController.reds) {
+                        image.setVisible(true);
+                    }
+                    JOptionPane.showMessageDialog(null,
+                            "Eliminated", "P1 Has Been Eliminated due to Fear!",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
             } else if (gameBoardController.p2Turn) {
                 gameBoardController.p2Fears++;
+                if (gameBoardController.p2Fears > 12) {
+                    gameBoardController.p2InGame = false;
+                    for (ImageView image : gameBoardController.blues) {
+                        image.setVisible(true);
+                    }
+                    JOptionPane.showMessageDialog(null,
+                            "Eliminated", "P2 Has Been Eliminated due to Fear!",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
             } else if (gameBoardController.p3Turn) {
                 gameBoardController.p3Fears++;
+                if (gameBoardController.p3Fears > 12) {
+                    gameBoardController.p3InGame = false;
+                    for (ImageView image : gameBoardController.greens) {
+                        image.setVisible(true);
+                    }
+                    JOptionPane.showMessageDialog(null,
+                            "Eliminated", "P3 Has Been Eliminated due to Fear!",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
             } else if (gameBoardController.p4Turn) {
                 gameBoardController.p4Fears++;
-            } else {
-                return;
-            }
-        } else {
-            if (gameBoardController.p1Turn) {
-                gameBoardController.p1Fears--;
-            } else if (gameBoardController.p2Turn) {
-                gameBoardController.p2Fears--;
-            } else if (gameBoardController.p3Turn) {
-                gameBoardController.p3Fears--;
-            } else if (gameBoardController.p4Turn) {
-                gameBoardController.p4Fears--;
-            } else {
-                return;
+                if (gameBoardController.p3Fears > 12) {
+                    gameBoardController.p3InGame = false;
+                    for (ImageView image : gameBoardController.yellows) {
+                        image.setVisible(true);
+                    }
+                    JOptionPane.showMessageDialog(null,
+                            "Eliminated", "P4 Has Been Eliminated due to Fear!",
+                            JOptionPane.INFORMATION_MESSAGE);
+                }
+            }  else {
+                if (gameBoardController.p1Turn) {
+                    gameBoardController.p1Fears--;
+                } else if (gameBoardController.p2Turn) {
+                    gameBoardController.p2Fears--;
+                } else if (gameBoardController.p3Turn) {
+                    gameBoardController.p3Fears--;
+                } else if (gameBoardController.p4Turn) {
+                    gameBoardController.p4Fears--;
+                } else {
+                    return;
+                }
             }
         }
 
@@ -203,16 +278,12 @@ public class questionScreenController implements Initializable {
         gameBoardController.fear3.setText("P3 Fears: " + gameBoardController.p3Fears);
         gameBoardController.fear4.setText("P4 Fears: " + gameBoardController.p4Fears);
 
+
         gameBoardController.switchTurns();
+        String newLine = System.getProperty("line.separator");
+        temp = temp.replaceAll("\\*", newLine);
         choiceScreenController.choiceLabel.setText(temp);
         Main.setChoiceScreenScene();
-//        gameBoardController.switchTurns();
-//        String choice = temp.substring(0, temp.indexOf("\n"));
-//        String fearUpdate = temp.substring(temp.indexOf("\n"));
-//        choice = "\n\n\n" + choice;
-//        choiceScreenController.choiceLabel.setText(choice);
-//        choiceScreenController.fearUpdateLabel.setText(fearUpdate);
-//        Main.setChoiceScreenScene();
     }
 
     @FXML

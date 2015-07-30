@@ -48,6 +48,11 @@ public class choiceScreenController implements Initializable {
     @FXML
     private StackPane sPane;
 
+    @FXML
+    private Label fearUpdateLabel_;
+
+    public static Label fearUpdateLabel;
+
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -56,9 +61,12 @@ public class choiceScreenController implements Initializable {
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
         Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
-        aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY()*1/5);
-        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY()*1/5);
+        aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY()/5);
+        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY()/5);
+        aPane.setLeftAnchor(sPane, primaryScreenBounds.getMaxX()/4);
+        aPane.setRightAnchor(sPane, primaryScreenBounds.getMaxX()/4);
 
         choiceLabel_ = choiceLabel;
+        fearUpdateLabel_ = fearUpdateLabel;
     }
 }

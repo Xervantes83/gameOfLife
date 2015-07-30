@@ -206,6 +206,13 @@ public class questionScreenController implements Initializable {
         gameBoardController.switchTurns();
         choiceScreenController.choiceLabel.setText(temp);
         Main.setChoiceScreenScene();
+//        gameBoardController.switchTurns();
+//        String choice = temp.substring(0, temp.indexOf("\n"));
+//        String fearUpdate = temp.substring(temp.indexOf("\n"));
+//        choice = "\n\n\n" + choice;
+//        choiceScreenController.choiceLabel.setText(choice);
+//        choiceScreenController.fearUpdateLabel.setText(fearUpdate);
+//        Main.setChoiceScreenScene();
     }
 
     @FXML
@@ -224,10 +231,12 @@ public class questionScreenController implements Initializable {
         questionLabel_ = questionLabel;
 
         Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
-        aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY()*1/5);
-        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY()*1/5);
+        aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY() * 1 / 5);
+        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY() * 1 / 5);
+        aPane.setLeftAnchor(sPane, primaryScreenBounds.getMaxX() / 4);
+        aPane.setRightAnchor(sPane, primaryScreenBounds.getMaxX() / 4);
 
-        titleLabel_.setLayoutX(primaryScreenBounds.getMaxY()/3);
+        titleLabel_.setLayoutX(primaryScreenBounds.getMaxY() / 3);
         questionLabel_.setLayoutX(0);
     }
 }

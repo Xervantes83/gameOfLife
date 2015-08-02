@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javax.swing.JOptionPane;
@@ -17,6 +18,8 @@ import javafx.scene.image.ImageView;
 import java.lang.Integer;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.canvas.Canvas;
+import javafx.stage.Screen;
+
 import java.util.ArrayList;
 
 
@@ -665,6 +668,9 @@ public class gameBoardController implements Initializable {
     private ImageView[] yellows_;
     public static ImageView[] yellows;
 
+    @FXML
+    private ImageView logo;
+
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -672,6 +678,12 @@ public class gameBoardController implements Initializable {
      */
     @Override
     public void initialize(final URL url, final ResourceBundle rb) {
+
+        Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
+
+        logo.setFitHeight(primaryScreenBounds.getMaxY() * 3 / 24);
+        logo.setFitWidth(primaryScreenBounds.getMaxX() * 1/4);
+
         ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red33, red43, red53, red63, red73};
         ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue33, blue43, blue53, blue63, blue73};
         ImageView[] greens = {green00, green10, green20, green30, green40, green50, green60, green70, green01, green11, green21, green31, green41, green51, green61, green71, green02, green12, green22, green32, green42, green52, green62, green72, green03, green13, green23, green33, green43, green53, green63, green73};

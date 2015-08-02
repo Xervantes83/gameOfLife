@@ -20,7 +20,9 @@ public class Main extends Application {
     static Stage PrimaryStage;
     private static Scene main;
     private static Scene gameBoardScreen;
-    private static Scene ruleScreen;
+    private static Scene ruleScreen1;
+    private static Scene ruleScreen2;
+    private static Scene ruleScreen3;
     private static Scene questionScreen;
     private static Scene choiceScreen;
     private static String[] names;
@@ -102,19 +104,23 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("startScreen.fxml"));
         Parent gameBoard = FXMLLoader.load(getClass().getResource("gameBoard.fxml"));
-        Parent rule = FXMLLoader.load(getClass().getResource("ruleScreen.fxml"));
+        Parent rule1 = FXMLLoader.load(getClass().getResource("rulesScreen1.fxml"));
+        Parent rule2 = FXMLLoader.load(getClass().getResource("rulesScreen2.fxml"));
+        Parent rule3 = FXMLLoader.load(getClass().getResource("rulesScreen11.fxml"));
         Parent question = FXMLLoader.load(getClass().getResource("questionScreen.fxml"));
         Parent choice = FXMLLoader.load(getClass().getResource("choiceScreen.fxml"));
 
         Rectangle2D visualBounds = Screen.getPrimary().getVisualBounds();
         main = new Scene(root, visualBounds.getWidth(), visualBounds.getHeight() - 30);
         gameBoardScreen = new Scene(gameBoard, visualBounds.getWidth(), visualBounds.getHeight() - 30);
-        ruleScreen = new Scene(rule, visualBounds.getWidth(), visualBounds.getHeight() - 30);
+        ruleScreen1 = new Scene(rule1, visualBounds.getWidth(), visualBounds.getHeight() - 30);
+        ruleScreen2 = new Scene(rule2, visualBounds.getWidth(), visualBounds.getHeight() - 30);
+        ruleScreen3 = new Scene(rule3, visualBounds.getWidth(), visualBounds.getHeight() - 30);
         questionScreen = new Scene(question, visualBounds.getWidth(), visualBounds.getHeight() - 30);
         choiceScreen = new Scene(choice, visualBounds.getWidth(), visualBounds.getHeight() - 30);
 
         PrimaryStage = stage;
-        PrimaryStage.setTitle("The Game of Life");
+        PrimaryStage.setTitle("The STEM Life");
         PrimaryStage.setScene(main);
         PrimaryStage.show();
     }
@@ -152,10 +158,24 @@ public class Main extends Application {
     }
 
     /**
-     * sets the scene to the rule scene
+     * sets the scene to the rule scene1
      */
-    public static void setRuleScene() {
-        PrimaryStage.setScene(ruleScreen);
+    public static void setRuleScene1() {
+        PrimaryStage.setScene(ruleScreen1);
+    }
+
+    /**
+     * sets the scene to the rule scene2
+     */
+    public static void setRuleScene2() {
+        PrimaryStage.setScene(ruleScreen2);
+    }
+
+    /**
+     * sets the scene to the rule scene3
+     */
+    public static void setRuleScene3() {
+        PrimaryStage.setScene(ruleScreen3);
     }
 
     /**
@@ -178,6 +198,8 @@ public class Main extends Application {
     public static void setChoiceScreenScene() {
         PrimaryStage.setScene(choiceScreen);
     }
+
+
 
     public static void main(String[] args) {
         launch(args);

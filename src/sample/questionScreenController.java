@@ -186,19 +186,19 @@ public class questionScreenController implements Initializable {
         questionScreenController.titleLabel.setText(tempName);
         String temp = "";
         if(tempName.equals("Life Problems")) {
-            temp = Main.lifeQuestions.get(1).get(gameBoardController.lifeQuestNum);
+            temp = Main.lifeQuestions.get(2).get(gameBoardController.lifeQuestNum);
             gameBoardController.lifeQuestNum++;
             if (gameBoardController.lifeQuestNum == Main.lifeQuestions.get(0).size()) {
                 gameBoardController.lifeQuestNum = 0;
             }
         } else if(tempName.equals("Academic Problems")) {
-            temp = Main.academicQuestions.get(1).get(gameBoardController.acaQuestNum);
+            temp = Main.academicQuestions.get(2).get(gameBoardController.acaQuestNum);
             gameBoardController.acaQuestNum++;
             if (gameBoardController.acaQuestNum == Main.academicQuestions.get(0).size()) {
                 gameBoardController.acaQuestNum = 0;
             }
         } else if(tempName.equals("Personal Problems")) {
-            temp = Main.personalQuestions.get(1).get(gameBoardController.persQuestNum);
+            temp = Main.personalQuestions.get(2).get(gameBoardController.persQuestNum);
             gameBoardController.persQuestNum++;
             if (gameBoardController.persQuestNum == Main.personalQuestions.get(0).size()) {
                 gameBoardController.persQuestNum = 0;

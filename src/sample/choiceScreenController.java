@@ -26,11 +26,10 @@ public class choiceScreenController implements Initializable {
 
     public static Label choiceLabel;
 
-    /**
-     * @variable the button to return to gameBoard
-     */
     @FXML
-    private Button returnButton;
+    private Label result_;
+
+    public static Label result;
 
     /**
      * sets the boardGame scene as the main scene when the button is clicked.
@@ -53,6 +52,9 @@ public class choiceScreenController implements Initializable {
 
     public static Label fearUpdateLabel;
 
+    @FXML
+    private static Button returnButton;
+
     /**
      * Initializes.
      * @param url no idea what this does, honestly
@@ -62,9 +64,11 @@ public class choiceScreenController implements Initializable {
     public void initialize(final URL url, final ResourceBundle rb) {
         Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
         aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY()/5);
-        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY()/5);
-        aPane.setLeftAnchor(sPane, primaryScreenBounds.getMaxX()/4);
-        aPane.setRightAnchor(sPane, primaryScreenBounds.getMaxX()/4);
+        aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY() / 6);
+        aPane.setLeftAnchor(sPane, primaryScreenBounds.getMaxX() / 4);
+        aPane.setRightAnchor(sPane, primaryScreenBounds.getMaxX() / 4);
+
+        returnButton.setPrefSize(primaryScreenBounds.getMaxX() / 10, primaryScreenBounds.getMaxY() / 10);
 
         choiceLabel_ = choiceLabel;
         fearUpdateLabel_ = fearUpdateLabel;

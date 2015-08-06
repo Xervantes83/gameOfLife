@@ -144,11 +144,16 @@ public class Main extends Application {
         }
         for (int i : summerTiles ) {
             if (i == key) {
+                isSummer = true;
                 return names[3];
             }
         }
+        isNewYear = true;
         return "New School Year";
     }
+
+    public static boolean isSummer;
+    public static boolean isNewYear;
 
     /**
      * sets the scene to the boardGame scene

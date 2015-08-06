@@ -4,9 +4,12 @@ import com.sun.org.apache.xpath.internal.operations.And;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Screen;
 import javafx.scene.image.ImageView;
@@ -49,13 +52,16 @@ public class questionScreenController implements Initializable {
      * @variable button to choose choice 1
      */
     @FXML
-    private Button choice1Button;
+    private Button choice1Button_;
+    public static Button choice1Button;
+
 
     /**
      * @variable button to choose choice 2
      */
     @FXML
-    private Button choice2Button;
+    private Button choice2Button_;
+    public static Button choice2Button;
 
     /**
      * sets the choiceScreen scene as the main scene when the button is clicked.
@@ -304,8 +310,11 @@ public class questionScreenController implements Initializable {
         Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
         aPane.setTopAnchor(sPane, primaryScreenBounds.getMaxY() * 1 / 5);
         aPane.setBottomAnchor(sPane, primaryScreenBounds.getMaxY() * 1 / 5);
-        aPane.setLeftAnchor(sPane, primaryScreenBounds.getMaxX() / 4);
-        aPane.setRightAnchor(sPane, primaryScreenBounds.getMaxX() / 4);
+        aPane.setLeftAnchor(sPane, primaryScreenBounds.getMaxX() / 5);
+        aPane.setRightAnchor(sPane, primaryScreenBounds.getMaxX() / 5);
+
+        choice1Button.setPrefSize(primaryScreenBounds.getMaxX() / 5, primaryScreenBounds.getMaxY() / 10);
+        choice2Button.setPrefSize(primaryScreenBounds.getMaxX() / 5, primaryScreenBounds.getMaxY() / 10);
 
         titleLabel_.setLayoutX(primaryScreenBounds.getMaxY() / 3);
         questionLabel_.setLayoutX(0);

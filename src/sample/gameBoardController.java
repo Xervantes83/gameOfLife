@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -18,6 +19,7 @@ import javafx.scene.image.ImageView;
 import java.lang.Integer;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.canvas.Canvas;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Screen;
 
 import java.util.ArrayList;
@@ -545,7 +547,7 @@ public class gameBoardController implements Initializable {
      */
     @FXML
     private void handleDieButtonAction(final ActionEvent event) {
-        int playerMove = (int)(Math.random() * 6) + 1;
+        int playerMove = (int) (Math.random() * 6) + 1;
         try {
             getImageView(playerMove).setVisible(true);
         } catch (IOException e) {
@@ -560,20 +562,69 @@ public class gameBoardController implements Initializable {
                 "You have rolled a " + playerMove, "Player Movement",
                 JOptionPane.INFORMATION_MESSAGE);
         String tempName = Main.getQuestionTitle(getPlayerLocation());
-        questionScreenController.titleLabel.setText(tempName);
+            if (Main.isNewYear || Main.isSummer){
+                if (Main.isSummer) {
+                    choiceScreenController.result.setText("It's Summer");
+                    choiceScreenController.choiceLabel.setText("");
+                    Main.isSummer = false;
+                    Main.setChoiceScreenScene();
+                } else {
+                    choiceScreenController.result.setText("Happy New Year");
+                    choiceScreenController.choiceLabel.setText("");
+                    Main.isNewYear = false;
+                    Main.setChoiceScreenScene();
+                }
+            } else {
 
-        String temp = "";
-        if(tempName.equals("Life Problems")) {
-            temp = Main.lifeQuestions.get(0).get(lifeQuestNum);
-        } else if(tempName.equals("Academic Problems")) {
-            temp = Main.academicQuestions.get(0).get(acaQuestNum);
-        } else if(tempName.equals("Personal Problems")) {
-            temp = Main.personalQuestions.get(0).get(persQuestNum);
+            questionScreenController.titleLabel.setText(tempName);
+
+                choiceScreenController.result.setText("Result");
+
+            String startChoice1 = "";
+            String startChoice2 = "";
+
+            String temp = "";
+            if (tempName.equals("Life Problems")) {
+                temp = Main.lifeQuestions.get(0).get(lifeQuestNum);
+                startChoice1 = Main.lifeQuestions.get(1).get(lifeQuestNum);
+                startChoice2 = Main.lifeQuestions.get(2).get(lifeQuestNum);
+            } else if (tempName.equals("Academic Problems")) {
+                temp = Main.academicQuestions.get(0).get(acaQuestNum);
+                startChoice1 = Main.academicQuestions.get(1).get(acaQuestNum);
+                startChoice2 = Main.academicQuestions.get(2).get(acaQuestNum);
+            } else if (tempName.equals("Personal Problems")) {
+                temp = Main.personalQuestions.get(0).get(persQuestNum);
+                startChoice1 = Main.personalQuestions.get(1).get(persQuestNum);
+                startChoice2 = Main.personalQuestions.get(2).get(persQuestNum);
+            }
+
+            String[] choice1 = null;
+            String[] choice2 = null;
+
+            try {
+                choice1 = startChoice1.split(" ", 3);
+                choice2 = startChoice2.split(" ", 3);
+            } catch (Exception e) {
+                System.err.println(e.getMessage());
+            }
+
+            startChoice1 = choice1[0];
+
+            for (int i = 1; i < choice1.length; i++)
+                startChoice1 = startChoice1 + " " + choice1[i];
+
+            startChoice2 = choice2[0];
+
+            for (int i = 1; i < choice2.length; i++)
+                startChoice2 = startChoice2 + " " + choice2[i];
+
+            questionScreenController.choice1Button.setText(startChoice1);
+            questionScreenController.choice2Button.setText(startChoice2);
+            questionScreenController.questionLabel.setText(temp);
+
+
+            Main.setQuestionScreenScene();
         }
-
-        questionScreenController.questionLabel.setText(temp);
-        questionScreenController.questionLabel.setLayoutX(500);
-        Main.setQuestionScreenScene();
     }
 
     private boolean p1InGame_;
@@ -682,7 +733,9 @@ public class gameBoardController implements Initializable {
         Rectangle2D primaryScreenBounds = Screen.getPrimary().getVisualBounds();
 
         logo.setFitHeight(primaryScreenBounds.getMaxY() * 3 / 24);
-        logo.setFitWidth(primaryScreenBounds.getMaxX() * 1/4);
+        logo.setFitWidth(primaryScreenBounds.getMaxX() * 1 / 4);
+
+        StackPane.setMargin(dieButton, new Insets(0, 0, 0 , primaryScreenBounds.getMaxX()*1/9));
 
         ImageView[] reds = {red00, red10, red20, red30, red40, red50, red60, red70, red01, red11, red21, red31, red41, red51, red61, red71, red02, red12, red22, red32, red42, red52, red62, red72, red03, red13, red23, red33, red43, red53, red63, red73};
         ImageView[] blues = {blue00, blue10, blue20, blue30, blue40, blue50, blue60, blue70, blue01, blue11, blue21, blue31, blue41, blue51, blue61, blue71, blue02, blue12, blue22, blue32, blue42, blue52, blue62, blue72, blue03, blue13, blue23, blue33, blue43, blue53, blue63, blue73};
